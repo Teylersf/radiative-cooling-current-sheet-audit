@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "all_checks_passed": true,
+  "version": "1.1.0",
+  "author": "Taylor Kalin",
+  "checked_at_utc": "2026-10-29T21:58:05.757715+00:00",
+  "pdf_pages": 12,
+  "pdf_bytes": 559440,
+  "pdf_sha256": "d5a8b672d6eeffb74d1969a27ba251f693defc7dac60f7a8a7aa25a53c8b440f",
+  "manuscript_sha256": "50cc3d116ba0878527628c0e346749f16b6d7990e681857e342296bcc7cb3c04",
+  "primary_reviewer_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "independent_reviewer_pages_visually_inspected": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "final_primary_pages_pixel_identical_to_inspected_renders": true,
+  "all_final_pages_visually_passed": true,
+  "independent_receipt": "submissions/revision1-independent-review.json",
+  "independent_receipt_sha256": "5e4c2116ef5ffea19a486c909057957639ed883af04ff67a74090af3383ffe2a",
+  "source_mathematical_expressions_preserved": 18,
+  "original_figures": 3,
+  "tables": 1,
+  "references": 5,
+  "TeX": "Tectonic and desktop compiler success; no overfull/underfull warnings in final Tectonic build.",
+  "computational_software_version": "1.0.0",
+  "scientific_code_unchanged": true,
+  "scope": "Conditional mathematical comment; no source simulation/trajectory reproduction or repaired global MHD solution."
+}

@@ -1,0 +1,7 @@
+Taylor Kalin
+
+Revised mathematical comment with 18 source-equation extracts, a conditional coupled-ODE remainder proof and complete numerical protocol. Clarifies total-pressure interpretation, edition page counts, correction-search scope and original-trajectory limitations.
+
+Computational software remains 1.0.0 at 8a4e64cc032cb0c57bb621b200903b0c0f0706c2, DOI 10.5281/zenodo.23780790. Its availability and all 36 bytesets were anonymously reverified; this is a DataCite registration, not Crossref.
+
+AI editorial review is ongoing; public release is not acceptance.

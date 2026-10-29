@@ -49,7 +49,7 @@
     "value": "10.5281/zenodo.23780790",
     "record_url": "https://zenodo.org/records/23780790",
     "verification_receipt": "submissions/zenodo-code-v1.0.0.json",
-    "verification_receipt_sha256": "d5b8b6ffcbef33dca191036032cf91c481ccfdeab577cffa8cd0a1a36317b130"
+    "verification_receipt_sha256": "7a8f93ad91f76a0d23535190932b274f6788c661b72d554acb849e392ea2db16"
   },
   "anonymous_public_verification": {
     "url": "https://codeload.github.com/Teylersf/radiative-cooling-current-sheet-audit/zip/8a4e64cc032cb0c57bb621b200903b0c0f0706c2",

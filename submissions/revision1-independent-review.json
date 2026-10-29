@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T21:57:40.852336+00:00",
+  "study": "radiative-cooling-current-sheet-audit",
+  "manuscript_version": "1.1.0",
+  "status": "pass",
+  "all_checks_passed": true,
+  "scope": "Independent mathematical/source-fidelity and requested final-PDF-page review; not independent human peer review or new source numerical reproduction.",
+  "manuscript": {
+    "path": "paper/manuscript.md",
+    "bytes": 33750,
+    "sha256": "50cc3d116ba0878527628c0e346749f16b6d7990e681857e342296bcc7cb3c04"
+  },
+  "PDF": {
+    "path": "paper/main.pdf",
+    "bytes": 559440,
+    "sha256": "d5a8b672d6eeffb74d1969a27ba251f693defc7dac60f7a8a7aa25a53c8b440f",
+    "pages": 12,
+    "metadata_author": "Taylor Kalin"
+  },
+  "visual_QA": {
+    "pages_inspected": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "dpi": 120,
+    "current_PDF_independently_rerendered": true,
+    "page_records": [
+      {
+        "page": 7,
+        "final_png_sha256": "36a657832019b0ef7d29109d42bf9114bd94eaa3e41e4295c9769607ecbdf5a0",
+        "independent_current_PDF_rerender_sha256": "36a657832019b0ef7d29109d42bf9114bd94eaa3e41e4295c9769607ecbdf5a0",
+        "exact_rerender_match": true,
+        "pixel_identical_to_pre_locator_review": true,
+        "visual_inspection": "pass; complete page previously inspected and final raster identical"
+      },
+      {
+        "page": 8,
+        "final_png_sha256": "c5ffb1ccc3e3249067cda15dc2c3c15eeb2a4c742970bdd3dd49f2aabf6ac43a",
+        "independent_current_PDF_rerender_sha256": "c5ffb1ccc3e3249067cda15dc2c3c15eeb2a4c742970bdd3dd49f2aabf6ac43a",
+        "exact_rerender_match": true,
+        "pixel_identical_to_pre_locator_review": true,
+        "visual_inspection": "pass; complete page previously inspected and final raster identical"
+      },
+      {
+        "page": 9,
+        "final_png_sha256": "7099b5ade2359df50f9385f7f3143d37ba0e27657d98be10ac204986ca066ee3",
+        "independent_current_PDF_rerender_sha256": "7099b5ade2359df50f9385f7f3143d37ba0e27657d98be10ac204986ca066ee3",
+        "exact_rerender_match": true,
+        "pixel_identical_to_pre_locator_review": false,
+        "visual_inspection": "pass; page9 reinspected after locator correction, others inherit actual unchanged-page inspection"
+      },
+      {
+        "page": 10,
+        "final_png_sha256": "c5a4ac87cefb83ea2fffc32b54f42a961c2237631c6094aed3ea8620f36717ae",
+        "independent_current_PDF_rerender_sha256": "c5a4ac87cefb83ea2fffc32b54f42a961c2237631c6094aed3ea8620f36717ae",
+        "exact_rerender_match": true,
+        "pixel_identical_to_pre_locator_review": true,
+        "visual_inspection": "pass; complete page previously inspected and final raster identical"
+      },
+      {
+        "page": 11,
+        "final_png_sha256": "95c712a11ead8fd2fb413eb32bb6dadb8cd0a249fa8956e90b6e523279ec9593",
+        "independent_current_PDF_rerender_sha256": "95c712a11ead8fd2fb413eb32bb6dadb8cd0a249fa8956e90b6e523279ec9593",
+        "exact_rerender_match": true,
+        "pixel_identical_to_pre_locator_review": true,
+        "visual_inspection": "pass; complete page previously inspected and final raster identical"
+      },
+      {
+        "page": 12,
+        "final_png_sha256": "b37a1117ef526743ac36e3d3d2fdf1745fcc39a18cd6329db101cbb64fb6b34d",
+        "independent_current_PDF_rerender_sha256": "b37a1117ef526743ac36e3d3d2fdf1745fcc39a18cd6329db101cbb64fb6b34d",
+        "exact_rerender_match": true,
+        "pixel_identical_to_pre_locator_review": true,
+        "visual_inspection": "pass; complete page previously inspected and final raster identical"
+      }
+    ],
+    "pages_1_through_6_exact_raster_equality_only": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "pages_1_through_6_visual_review_not_claimed_by_this_receipt": true,
+    "findings": "No clipped/overlapping text, lost signs, broken mathematical grouping, unreadable tables/figures or unresolved references on inspected pages. Final p9 correctly lists source p15 for Eq3.13."
+  },
+  "source_expression_fidelity": {
+    "extraction_path": "audit/source-equation-extracts.json",
+    "extraction_sha256": "c562083b05fc2a29fae36dd61f7e5b102277b7c3415747d86fa55b32db1383c2",
+    "source_PDF_sha256": "1e47de8f1bbdb554c26efe029b13127cdbf4464fe6599721b64129f86b22150e",
+    "equation_count": 18,
+    "equations": [
+      {
+        "source_label": "(2.4)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.22)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.23)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.24)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.25)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.26)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.27)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(A4)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(A5)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(A6)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.31)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.33)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.34)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.35)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(2.36)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(3.13)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(B13)",
+        "format_normalized_math_equal": true
+      },
+      {
+        "source_label": "(B14)",
+        "format_normalized_math_equal": true
+      }
+    ],
+    "comparison": "Exact normalized TeX equality after removing display environments, alignment/line-break commands, equation tags, delimiter sizing, spacing commands and whitespace only; mathematical tokens and grouping retained.",
+    "original_VOR_pages_visually_inspected": [
+      3,
+      6,
+      7,
+      8,
+      14,
+      15,
+      21,
+      23
+    ],
+    "wrapped_expressions_checked": [
+      "S2.24",
+      "S2.26",
+      "SA4",
+      "SA5",
+      "SA6",
+      "S2.31",
+      "SB13",
+      "SB14"
+    ]
+  },
+  "coupled_asymptotic_proof": {
+    "status": "pass",
+    "assumptions_explicit": true,
+    "assumptions": [
+      "Classical C2 positive branch of the printed equations, if it exists",
+      "Fixed finite coefficients and no earlier singularity",
+      "xi~A*tau^(2/3), eta->eta_c>0"
+    ],
+    "bounds_verified": [
+      "eta_ddot=O(tau^(-2/3)) implies finite endpoint eta_dot and eta-eta_c=O(tau)",
+      "I_c-I=O(tau^(5/9)) and H-H_c=O(tau^(5/9))",
+      "Exact R=-(eta-eta_c)xi^(-2)-(H-H_c)xi^(-5/3)+eta^(-1)=O(tau^(-5/9))",
+      "Renormalized energy derivative xi_dot*R=O(tau^(-8/9)) is integrable",
+      "Inverse-speed expansion yields D1=(81/44)H_c*A^(-5/3), remainder O(tau^(10/9))"
+    ],
+    "cancellation_and_parameter_nonuniformity_qualified": true,
+    "global_existence_or_repaired_MHD_claimed": false,
+    "archived_frozen_scalar_checks_not_presented_as_coupled_numerical_validation": true
+  },
+  "numerical_protocol_readback": {
+    "status": "pass",
+    "verifier_path": "experiments/verify_pressure_independently.py",
+    "verifier_sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b",
+    "record_path": "results/independent-pressure.json",
+    "record_sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6",
+    "source_code_and_record_inspected_without_rerunning": true,
+    "primary_grid_cases": 80,
+    "other_ordering_trajectories": 220,
+    "other_finite_difference_trajectories": 18,
+    "total_integrations": 318,
+    "method": {
+      "direct_ODE": "SciPy DOP853 pressure equation, not a transformed closed-form ODE",
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.025,
+      "reference": "mpmath65digit quadrature of J^q, followed by Bernoulli/exponential formula",
+      "time_grid_points": 17,
+      "final_time": 0.4,
+      "random_generator": "NumPy PCG64 seed250813081"
+    },
+    "pressure_error_record": 9.753857047943813e-16,
+    "paper_reported_bound": 9.76e-16,
+    "error_normalization_matches_code": true,
+    "environment_readback_matches_manuscript": true,
+    "figure_histories_not_misrepresented_as_momentum_solutions": true
+  },
+  "citation_and_scope_checks": {
+    "status": "pass",
+    "reference_count": 5,
+    "DataCite_versus_Crossref_boundary_explicit": true,
+    "source_versus_comment_equation_labels_distinct": true,
+    "thermodynamic_total_pressure_basis_explicit": true,
+    "finite_window_and_joint_limit_caveats_preserved": true
+  },
+  "material_issues": [],
+  "fixed_issue": "Source-expression page list corrected from14 to15 for source Eq3.13 before this final receipt.",
+  "canonical_files_modified_by_review": [
+    "submissions/revision1-independent-review.json"
+  ],
+  "numerical_programs_rerun_for_review": false,
+  "new_MHD_or_PIC_simulations": 0
+}

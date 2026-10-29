@@ -6,14 +6,14 @@ Independent researcher; https://taylorkalin.com
 
 ORCID: 0009-0003-9000-9315; correspondence: teylersf@gmail.com
 
-Version 1.0.0; 29 October 2026
+Version 1.1.0; 29 October 2026
 
 
 ## 1. Target and scope
 
 Radiative cooling can change the pressure and compression of reconnecting layers. Chowdhry and Loureiro [1,2] propose an affine X-point-collapse model and a separate modification of a radiatively cooled Sweet-Parker layer. Their abstract connects strong cooling to accelerated inflow collapse and arrested or reversed outflow elongation. The pressure reduction is therefore central to the proposed dynamical explanation, rather than a peripheral normalization choice.
 
-We examine the 26-page journal version of record, *Journal of Plasma Physics* **91**(6), E148 (2025), DOI 10.1017/S0022377825100949 [1], and the supplied 24-page arXiv:2508.13081v1 [2]. The supplied preprint is byte-identical to the official versioned PDF. Both editions have been read completely. The final article corrects the preprint's missing equality in Eq. (2.14), updates the flow-rate symbols in Eq. (3.1), and adds cooling-law, Newtonian-MHD and relativistic-applicability qualifications. Those improvements are credited. The pressure construction, principal collapse balances and steady-layer expressions addressed here remain in the final edition. Locators below refer to [1] unless stated otherwise.
+We examine the 26-page journal version of record, *Journal of Plasma Physics* **91**(6), E148 (2025), DOI 10.1017/S0022377825100949 [1], and the supplied 24-page arXiv:2508.13081v1 [2]. The supplied preprint is byte-identical to the official versioned PDF. Both editions have been read completely. The final article corrects the preprint's missing equality in Eq. (2.14), updates the flow-rate symbols in Eq. (3.1), and adds cooling-law, Newtonian-MHD and relativistic-applicability qualifications. Those improvements are credited. The pressure construction, principal collapse balances and steady-layer expressions addressed here remain in the final edition. Locators below refer to [1] unless stated otherwise. The 24-page count is the actual page-tree count of the versioned preprint (966,878 bytes, SHA-256 `49dd1f97967345a7c22825158758ab1ed49529abd27c717ee2bdbc6ef7c40c0c`); the journal PDF has 26 pages (786,255 bytes, SHA-256 `1e47de8f1bbdb554c26efe029b13127cdbf4464fe6599721b64129f86b22150e`). Byte identity is between the supplied preprint and official arXiv v1, not between preprint and journal. A secondary catalogue page count does not override the retrieved PDF page tree. On 29 October 2026, the official article, primary Crossref relation/update fields and targeted title/DOI correction searches revealed no identified target-specific erratum, corrigendum or response. An adjacent issue-list erratum was unrelated. This bounded negative search is not proof that none exists; no response from the source authors was obtained.
 
 The main question is internal consistency: do the displayed reductions satisfy the energy equation and their own positivity and asymptotic assumptions? We derive the pressure evolution first, then examine its spatial implications. Separate checks preserve the steady-layer algebra instead of treating every conclusion as invalid. No original numerical analysis program or complete set of execution inputs was obtained from the inspected source archive. The original curves are not reproduced here.
 
@@ -95,7 +95,7 @@ $$
 
 If $0<\xi<\eta$, $P_{0,X}>0$ and $\theta\ge0$, every term on the right is nonnegative and $D>0$. Hence $\ddot\eta>0$. Deceleration on this branch requires $\theta<0$, which is negative central *total thermal pressure* in Eq. (2.26). Negative pressure is necessary here, not sufficient to outweigh the magnetic term. The pressure is not defined as a freely adjustable perturbation; adding a constant background changes an absolute-pressure nonlinear cooling law and requires solving that law again.
 
-This restriction matters for the interpretation in Section 3.3, which invokes stronger nonuniform compression and a pressure maximum turning into a minimum. The stated affine Jacobian and uniform initial density instead give spatially uniform density at each time. Neither that proposed density mechanism nor a positive-pressure central minimum follows from the equations supplied. This does not prove that a nonuniform-density plasma, a non-affine flow or a more complete radiative-MHD model cannot contract along its outflow direction.
+This restriction matters for the interpretation in Section 3.3, which invokes stronger nonuniform compression and a pressure maximum turning into a minimum. The stated affine Jacobian and uniform initial density instead give spatially uniform density at each time. Neither that proposed density mechanism nor a positive-pressure central minimum follows from the equations supplied. This does not prove that a nonuniform-density plasma, a non-affine flow or a more complete radiative-MHD model cannot contract along its outflow direction. Section 3 does not solve the repaired, generally non-affine momentum system. Its deceleration implication concerns only the printed ODE, and the scalar examples are not momentum solutions. The source uses the same pressure $P$ in its full energy equation (2.4), absolute radiated-power law and initial profile (2.25), reproduced below. No subtracted equilibrium pressure is introduced in this reduction. Thus the central value $P_{0,X}$ is a thermodynamic-pressure value; a reinterpretation as a signed perturbation would require an additional background term in the nonlinear cooling law.
 
 ## 4. Cumulative cooling and endpoint balances
 
@@ -124,16 +124,46 @@ Figure 2. For $t_c=1$, $\eta=1$, $\xi=\tau^\alpha$, the cumulative limit is $I_c
 The leading inverse-square scalar equation also fixes a coefficient:
 $\ddot\xi=-\eta_c/\xi^2$ requires $A^3=9\eta_c/2$ for $\xi=A\tau^{2/3}$. Appendix B's Eq. (B14) instead prints $9\eta_c/4$, giving half the required acceleration. The missing factor is visible between its kinetic-energy first integral and quadrature. This is a discrepancy in the target's displayed calculation, not an allegation about the classical literature it cites.
 
-Retaining a generic finite net thermal coefficient has a further consequence. Define $H_c=P_{0,X}\eta_c^{1-\gamma}(\widetilde C I_c^2-1)$. The frozen leading scalar equation is
-$\ddot\xi=-\eta_c\xi^{-2}-H_c\xi^{-5/3}+\cdots$.
-When $H_c\ne0$, its first thermal correction is
+A conditional local check can also retain the coupling to $\eta$. Consider a $C^2$ positive branch of the *printed* Eqs. (2.29) and (2.31), with fixed finite coefficients, no earlier singularity, $\xi\sim A\tau^{2/3}$ and $\eta\to\eta_c>0$. This assumes a branch if it exists; it does not establish one for the source initial data. Define $H(t)=P_{0,X}\eta(t)^{-2/3}(\widetilde C I(t)^2-1)$ and $H_c=\lim H(t)$. The exact printed equations become
 
 $$
-\xi=A\tau^{2/3}+D_1\tau^{8/9}+\cdots,
-\qquad D_1=\frac{81}{44}H_cA^{-5/3}. \tag{10}
+\begin{aligned}
+\ddot\xi&=-\eta\xi^{-2}+\eta^{-1}-H(t)\xi^{-5/3},\\
+\ddot\eta&=\xi^{-1}-\xi\eta^{-2}-H(t)\eta^{-1}\xi^{-2/3}.
+\end{aligned}
 $$
 
-This follows by linearizing the inverse-square force as well as expanding the second derivative. A free scalar-energy correction of order $\tau^{4/3}$ is recovered in the zero-thermal-force control; it is not generically the first thermal correction when $H_c\ne0$. These are local consistency expansions of reduced equations, not a global existence theorem for the source initial data.
+The second equation gives $\ddot\eta=O(\tau^{-2/3})$, hence $\dot\eta\to v_c$ and $\eta=\eta_c-v_c\tau+O(\tau^{4/3})$. The cumulative-integral tail in Eq. (8) then gives $H-H_c=O(\tau^{5/9})$. Thus the first equation is $\ddot\xi=-\eta_c\xi^{-2}-H_c\xi^{-5/3}+\mathcal R(t)$, where
+
+$$
+\mathcal R=-(\eta-\eta_c)\xi^{-2}-(H-H_c)\xi^{-5/3}+\eta^{-1}
+=O(\tau^{-5/9}).
+$$
+
+This remainder is later than the nonzero limiting thermal force of order $\tau^{-10/9}$. More than formal differentiation of a leading equivalence is needed to obtain the correction. The exact scalar-energy identity
+
+$$
+\mathcal E=\frac{\dot\xi^2}{2}-\frac{\eta_c}{\xi}-\frac32H_c\xi^{-2/3},
+\qquad\dot{\mathcal E}=\dot\xi\mathcal R=O(\tau^{-8/9})
+$$
+
+has an integrable right-hand side, because the first equation also implies $\dot\xi=O(\tau^{-1/3})$. Therefore $\mathcal E\to\mathcal E_c$ and the decreasing endpoint branch has $\dot\xi^2=2\eta_c/\xi+3H_c\xi^{-2/3}+2\mathcal E_c+O(\xi^{1/6})$. Integrating its inverse speed gives
+
+$$
+\tau=\frac{2\xi^{3/2}}{3\sqrt{2\eta_c}}
+\left[1-\frac{27H_c}{44\eta_c}\xi^{1/3}+O(\xi^{2/3})\right].
+$$
+
+Inversion yields
+
+$$
+\begin{aligned}
+\xi&=A\tau^{2/3}+D_1\tau^{8/9}+O(\tau^{10/9}),\\
+A^3&=9\eta_c/2,\qquad D_1=\frac{81}{44}H_cA^{-5/3}.
+\end{aligned}\tag{10}
+$$
+
+For $H_c\ne0$ this is the first correction on the stated branch. When $H_c=0$, a nonzero limiting scalar-energy constant instead gives a $\tau^{4/3}$ correction; further cancellations require further analysis. The bounds are not asserted uniformly in varying parameters. These local results concern the printed ODE, not repaired thermodynamics, physical collapse or a reconstruction of original curves. The archived scalar quadrature controls test frozen coefficients; they do not numerically evolve or validate this coupled local branch.
 
 ## 5. Normalization and the steady branch
 
@@ -177,17 +207,142 @@ Finally, an algebraic steady solution does not establish thermal stability or ev
 
 ## 6. Verification, limitations and conclusion
 
-Three original figures and deterministic scalar examples accompany independent verifiers [5]. The pressure verifier integrates the original scalar pressure equation directly with DOP853, rather than integrating its transformed solution. Independent 65-digit quadrature then evaluates Eqs. (2)-(3). Eighty parameter/history reference controls, within 318 scalar integrations, agree to a maximum relative pressure difference $9.76\times10^{-16}$ in the recorded environment. Twenty groups of eleven ordered initial pressures retain ordering. Spatial differences of separately integrated pressures agree with high-precision derivatives to a maximum absolute difference $3.36\times10^{-10}$; the bremsstrahlung force coefficient varies across labels while the $b=0,1$ controls remain spatially constant. All 4,096 seeded nonnegative-pressure outflow states, including one zero-pressure control, satisfy Eq. (7)'s strict acceleration sign.
+Three original figures and deterministic scalar examples accompany independent verifiers [5]. The original computational files remain software version 1.0.0; this manuscript revision adds source extracts and narrows or derives interpretive claims without changing that archive. The pressure verifier integrates the original scalar pressure equation directly with DOP853, rather than integrating its transformed solution. Independent 65-digit quadrature then evaluates Eqs. (2)-(3). Eighty parameter/history reference controls, within 318 scalar integrations, agree to a maximum relative pressure difference $9.76\times10^{-16}$ in the recorded environment. Twenty groups of eleven ordered initial pressures retain ordering. Spatial differences of separately integrated pressures agree with high-precision derivatives to a maximum absolute difference $3.36\times10^{-10}$; the bremsstrahlung force coefficient varies across labels while the $b=0,1$ controls remain spatially constant. All 4,096 seeded nonnegative-pressure outflow states, including one zero-pressure control, satisfy Eq. (7)'s strict acceleration sign.
 
 A separate 150-digit Decimal calculation compares 48- and 96-point scalar quadratures, checks cumulative limits down to $\tau=2^{-320}$, and verifies the coefficient and reduced-equation subleading controls. Another independent calculator checks nine cooling-clock examples, six rational real-power sign cases, 24 parameter cases checking the steady-state identities, and four branch-domain cases. The verifiers do not import the plotting producer. Agreement is numerical and algebraic evidence, not physical accuracy, independent human review or bitwise reproducibility across arbitrary environments.
+
+The complete primary pressure grid is $J=\exp(h_0t+h_1t^2)$ with
+
+$$
+(h_0,h_1)\in\{(0,0),(-0.35,0),(0.4,0),(-0.25,0.3)\}.
+$$
+
+The remaining choices are $a=2$, $\gamma=5/3$, $b=0,1/4,1/2,3/4,1$; $P_0=0.8,2.3$; $\rho_0=0.7,1.4$; and $\bar C=0.12$. Here the verifier's variable named `kappa` means $\bar C$, so its transformed coefficient is $\bar C\rho_0^{a-b}$, the $\kappa$ defined in Section 2. Each of these 80 cases integrates to $t=0.4$ at 17 equally spaced output times with DOP853, relative tolerance $2\times10^{-12}$, absolute tolerance $2\times10^{-14}$ and maximum step 0.025. The reported relative error is $\max_j|P_j^{\rm ODE}-P_j^{\rm ref}|/P_j^{\rm ref}$ over positive reference pressures. It is measured agreement in these smooth controls, not a guaranteed solver error bound or a requested tolerance of $10^{-15}$.
+
+The other 238 integrations consist of 220 ordering trajectories with 11 starts equally spaced from 0.4 to 4 at $\rho_0=1$, and 18 finite-difference trajectories: $P_{0,X}=4$, $\rho_0=1$, $\bar C=0.6$, $x_0=0.25\pm10^{-4}$, $y_0=0,0.4,0.8$, $b=0,1/2,1$, using the changing-rate history. Spatial error is the absolute difference of the centered ODE gradient from the high-precision derivative. Scripts and raw receipts specify the remaining algebraic and seeded controls. Actual environments are CPython 3.12.14/NumPy 2.3.5/Matplotlib 3.11.2 for the plotting producer; CPython 3.13.7/NumPy 2.2.1/SciPy 1.17.1/mpmath 1.3.0 for the direct pressure verifier; and CPython 3.13.7 with the standard library for the two other verifiers. A single combined environment was not tested.
+
 
 The source authors' five figures, unprovided numerical execution parameters and original trajectories are not re-created. The pressure examples impose volume histories solely to test the energy equation. No full MHD/PIC calculation, repaired global affine evolution, physical collapse time or empirical replacement for the source's critical cooling threshold is claimed. Non-affine compression, density variation, heating, conduction, resistivity and breakdown of a cooling law can change the problem. A quoted numerical bremsstrahlung coefficient remains under-specified in temperature/composition conventions and is not promoted as a verified error. Minor presentation discrepancies are recorded separately from the main findings.
 
 The supported correction is substantive but bounded: the displayed pressure solution fails its governing equation, and restoring it removes the proposed exact global closure in the generic bremsstrahlung case. Positive-pressure restrictions and the retained cumulative integral further limit the stated flow-reversal and endpoint interpretations. The separate steady-branch algebra survives, accompanied by its necessary domain and unanswered stability questions.
 
-**Code and data availability.** Original code, numerical outputs, figure sources, source-edition hashes and portable independent verifiers are archived as software version 1.0.0 [5], https://doi.org/10.5281/zenodo.23780790 , direct record https://zenodo.org/records/23780790 . The frozen computational commit is `8a4e64cc032cb0c57bb621b200903b0c0f0706c2` in https://github.com/Teylersf/radiative-cooling-current-sheet-audit . The anonymous archive download matches all 36 frozen files, and a clean extraction reproduced all four programs without changing those bytes. The DOI was independently verified as `findable` in its primary DataCite registry on 29 October 2026; a Crossref-only lookup does not test this registration. Source PDFs are linked through their official records and are not bundled as this author's work.
+**Code and data availability.** Original code, numerical outputs, figure sources, source-edition hashes and portable independent verifiers are archived as software version 1.0.0 [5], https://doi.org/10.5281/zenodo.23780790 , direct record https://zenodo.org/records/23780790 . The frozen computational commit is `8a4e64cc032cb0c57bb621b200903b0c0f0706c2` in https://github.com/Teylersf/radiative-cooling-current-sheet-audit . The anonymous archive download matches all 36 frozen files, and a clean extraction reproduced all four programs without changing those bytes. The DOI was independently verified as `findable` in its primary DataCite registry on 29 October 2026; a Crossref-only lookup does not test this registration. The DOI resolver and anonymous record/API/download were rechecked after the review: all returned HTTP 200. Direct download: https://zenodo.org/api/records/23780790/files/radiative-cooling-current-sheet-audit-code-v1.0.0.zip/content . The ZIP is 561,065 bytes, SHA-256 `25a1e604ab4210f3fea86c56283d47ac0efdefd2a73cda4ceeb92c3939c812d1`; it contains the 36 frozen files. Primary registry: https://api.datacite.org/dois/10.5281/zenodo.23780790 . These checks verify availability and exact archive bytes; they do not endorse the scientific findings. Source PDFs are linked through their official records and are not bundled as this author's work.
 
 **Funding and disclosures.** Taylor Kalin self-funds this study. No outside funding or competing interests have been reported. AI tools assisted with source retrieval, derivation, code, adversarial checks and drafting. These checks are not independent human peer review. The source authors and institutions have not endorsed this work. Original code is MIT licensed; original audit text and figures are CC BY 4.0. Attributed third-party material retains its rights.
+
+### Source expressions for direct comparison
+
+The following expressions are reproduced from the version of record [1], with its symbols, signs and mathematical operations retained. Only line breaks, spacing and display environments are normalized. Prefix S identifies a source equation rather than a new equation of this comment. The original PDF pages are 3, 6-8, 15, 21 and 23. The extracted publisher TeX and source hashes are also supplied as `audit/source-equation-extracts.json`. Unexplained source symbols such as $C_t$ in (A4) are retained as printed.
+
+Source (2.4):
+
+$$
+\begin{aligned} & \frac {\partial P}{\partial t}=-(\gamma P \boldsymbol{\nabla }\boldsymbol{\cdot }\boldsymbol{v}+\boldsymbol{v}\boldsymbol{\cdot }\boldsymbol{\nabla }P)-(\gamma -1)C_{\text{cool}}\rho ^aT^b , \end{aligned}\tag{S2.4}
+$$
+
+Source (2.22):
+
+$$
+\begin{aligned} & \overline {C}_{\text{cool}} \equiv (\gamma -1) C_{\text{cool}}\left [\frac {(Z+1)}{m_i+Zm_e}\right ]^{-b}, \end{aligned}\tag{S2.22}
+$$
+
+Source (2.23):
+
+$$
+\begin{aligned} & \frac {\partial }{\partial t} \ln \left [\frac {P_L}{\rho _L^\gamma }\right ]=-\overline {C}_{\text{cool}} \rho _L^{a-b} P_L^{b-1}. \end{aligned}\tag{S2.23}
+$$
+
+Source (2.24):
+
+$$
+\begin{gathered}\textstyle \begin{aligned} & P_L=\frac {P_0}{J^\gamma } \bigl (C_1-\frac {C_2}{P_0}\bigl [(\gamma -1)(1-b) \overline {C}_{\text{cool}} \\ &\quad \int _0^t J^{b(1-\gamma )+(\gamma -a)}(t',\boldsymbol{r}_0) \text{d} t^{\prime }\bigr ]^{1 /(1-b)}\bigr ). \end{aligned}\end{gathered}\tag{S2.24}
+$$
+
+Source (2.25):
+
+$$
+\begin{aligned} & P_0\left (x_0, y_0\right )=P_{0, X}\left (1-\frac {1}{2}\left (x_0^2+y_0^2\right )\right )\!, \end{aligned}\tag{S2.25}
+$$
+
+Source (2.26):
+
+$$
+\begin{aligned} & P_L=\frac {P_0\bigl (x_0, y_0\bigr )}{J^\gamma }\bigl (1-\widetilde {C}_{\text{cool}}\bigl [ \\ &\quad \int _0^t J^{b(1-\gamma )+(\gamma -a)}(t',\boldsymbol{r}_0) \text{d} t^{\prime }\bigr ]^{1 /(1-b)}\bigr )\!, \end{aligned}\tag{S2.26}
+$$
+
+Source (2.27):
+
+$$
+\begin{aligned} & \widetilde {C}_{\text{cool}}=[(\gamma -1)(1-b)\overline {C}_{\text{cool}}]^{1/(1-b)}. \end{aligned}\tag{S2.27}
+$$
+
+Source (A4):
+
+$$
+\begin{gathered}\textstyle \begin{aligned} & \frac {\partial }{\partial t} \ln \left [F \frac {P_0}{\rho _0^\gamma }\right ]=\frac {1}{F^{b-1}} \frac {\partial }{\partial t} \ln F\\ & =\frac {1}{F^b}\frac {\partial F}{\partial t}\\ & =-C_{t}\boldsymbol{\cdot} F^{b-1} P_0^{b-1} \rho _0^{a-b} J^{b(1-\gamma )+(\gamma -a)}. \end{aligned}\end{gathered}\tag{SA4}
+$$
+
+Source (A5):
+
+$$
+\begin{gathered}\textstyle \begin{aligned} & F=C_1-\frac {C_2(x_0, y_0)}{P_0}[(\gamma -1)(1-b)\overline {C}_{\text{cool}}\\ &\quad \int _0^t J(t',\boldsymbol{r}_0)^{b(1-\gamma )+(\gamma -a)}\text{d}t^{\prime }]^{1/(1-b)}. \end{aligned}\end{gathered}\tag{SA5}
+$$
+
+Source (A6):
+
+$$
+\begin{gathered}\textstyle \begin{aligned} & P_L=\frac {P_0\bigl (x_0, y_0\bigr )}{J^\gamma } \times \bigl (1-\bigl [(\gamma -1)(1-b) R\\ &\quad \int _0^t J^{b(1-\gamma )+(\gamma -a)}(t',\boldsymbol{r}_0) \text{d} t^{\prime }\bigr ]^{1 /(1-b)}\bigr )\!, \end{aligned}\end{gathered}\tag{SA6}
+$$
+
+Source (2.31):
+
+$$
+\begin{aligned} \ddot {\xi } & =-\eta \left [\frac {1}{\xi ^2}-\frac {1}{\eta ^2}+\frac {P_{0,X}(\widetilde {C}_{\text{cool}}\left (I[\xi \eta ]\right )^{{1}/{(1-b)}}-1)}{(\xi \eta )^\gamma }\right ], \\[4pt] \ddot {\eta }& =\xi \left [\frac {1}{\xi ^2}-\frac {1}{\eta ^2}-\frac {P_{0,X}(\widetilde {C}_{\text{cool}}\left (I[\xi \eta ]\right )^{{1}/{(1-b)}}-1)}{(\xi \eta )^\gamma }\right ]. \end{aligned}\tag{S2.31}
+$$
+
+Source (2.33):
+
+$$
+\begin{aligned} & \tau _{\text{cool }} \equiv \frac {P}{\dot {Q}_{\text{rad }}} \approx \frac {P^{1-b}\rho ^{b-a}}{\overline {C}_{\text{cool}}}, \end{aligned}\tag{S2.33}
+$$
+
+Source (2.34):
+
+$$
+\begin{aligned} & \tau _{\text{outflow}} =\frac {\eta }{v_y(y=\eta )}=\frac {1}{\varGamma _y} , \end{aligned}\tag{S2.34}
+$$
+
+Source (2.35):
+
+$$
+\begin{aligned} & R=\overline {C}_{\text{cool}} \varGamma _{y,0}P_{0,X}^{b-1}\rho _0^{a-b}. \end{aligned}\tag{S2.35}
+$$
+
+Source (2.36):
+
+$$
+\begin{aligned} & \widetilde {C}_{\text{cool}}=\left [\frac {(\gamma -1)(b-1)}{\rho _0^{a-b}P_{0,X}^{b-1}\varGamma _{y,0}}R\right ]^{{1}/{(1-b)}}. \end{aligned}\tag{S2.36}
+$$
+
+Source (3.13):
+
+$$
+\begin{aligned} & \frac {\ddot {\xi }}{\eta (t_c)} \sim \frac {1}{\xi ^2}\sim \frac {\widetilde {C}_{\text{cool}} I[\xi \eta (t_c)]^{1/(1-b)}}{\eta (t_c)^{\gamma }\xi ^\gamma }, \end{aligned}\tag{S3.13}
+$$
+
+Source (B13):
+
+$$
+\begin{gathered}\textstyle \begin{aligned} \left (t_c-t\right ) &\approx \int \sqrt {-\frac {1}{c_1} \xi }-\frac {1}{2} \xi ^{3/2}\left (c_3 c_1^{2/3} \sqrt {-\frac {1}{c_1}}\right )+\mathcal{O}\left (\xi ^{5/2}\right ) \,\text{d} \xi \\[5pt] & \approx \frac {2}{3} \sqrt {-\frac {1}{c_1}} \xi ^{3/2}-\frac {1\left (c_3 c_1^{2/3} \sqrt {-\frac {1}{c_1}}\right )}{5} \xi ^{5/2}+\mathcal{O}\left (\xi ^{7/2}\right ). \end{aligned}\end{gathered}\tag{SB13}
+$$
+
+Source (B14):
+
+$$
+\begin{aligned} & \xi \sim \left (\frac {9}{4}\eta (t_c)\right )^{1/3}(t_c-t)^{2/3}+\frac {2}{15}\left (\frac {9}{4}\right )^{13/6}c_3(-c_1)^{7/3}(t_c-t)^{4/3}. \end{aligned}\tag{SB14}
+$$
+
+For the factor-of-two check, the source defines $c_1=-\eta(t_c)$ before (B11). Its printed leading (B13) inverts to $\xi\sim[9\eta_c/4]^{1/3}\tau^{2/3}$, reproducing (B14). But the independently integrated inverse-square equation has $\dot\xi^2\sim2\eta_c/\xi$ and $\tau\sim2\xi^{3/2}/(3\sqrt{2\eta_c})$, giving $[9\eta_c/2]^{1/3}$. Direct substitution gives the same coefficient. This locates the missing factor in the source quadrature, rather than attributing it to numerical trajectories.
 
 ## References
 

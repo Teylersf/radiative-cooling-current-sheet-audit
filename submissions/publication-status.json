@@ -18,19 +18,26 @@
     "scope": "Software archive, not paper acceptance"
   },
   "airaxiv": {
-    "state": "under_moderation",
+    "state": "published",
     "submission_id": 1282,
     "submission_url": "https://airaxiv.com/papers/submissions/1282/",
     "author": "Taylor Kalin",
     "classification": "AI-generated with human author",
     "category": "Theoretical",
-    "public_id": null,
-    "last_ui_check_utc": "2026-10-29T21:35:27.880556+00:00"
+    "public_id": "2610.0118",
+    "last_ui_check_utc": "2026-10-29T21:52:27.711485+00:00",
+    "public_url": "https://airaxiv.com/papers/view/2610.0118/",
+    "url": "https://airaxiv.com/papers/view/2610.0118/",
+    "public_version": 1,
+    "public_manuscript_version": "1.0.0",
+    "public_pdf_sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+    "anonymous_pdf_verified": true,
+    "moderation_status_ui": "PUBLISHED"
   },
   "publishfun": {
-    "state": "under_review",
+    "state": "revision_requested",
     "paper_id": "p_EE9ZliH1d9MufihL",
-    "observed_at_utc": "2026-10-29T21:38:03.291360+00:00",
+    "observed_at_utc": "2026-10-29T21:47:32.730576+00:00",
     "http_status": 200,
     "url": "https://publish.fun/papers/p_EE9ZliH1d9MufihL",
     "review_type": "AI review",
@@ -45,5 +52,5 @@
     "state": "pending_package_and_this_study_Publishfun_final_disposition"
   },
   "review_disclosure": "Venue AI review, public preprints, softwarepublication and independent human peerreview are separate states.",
-  "checked_at_utc": "2026-10-29T21:38:03.398518+00:00"
+  "checked_at_utc": "2026-10-29T21:52:34.255563+00:00"
 }
