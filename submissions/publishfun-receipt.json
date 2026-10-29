@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-29T21:36:30.879702+00:00",
+  "http_status": 202,
+  "study": "radiative-cooling-current-sheet-audit",
+  "request_body_sha256": "fd9738c88794594eaf953d8360c7eb7957cc0fe58e5b450e850d8459af142538",
+  "response": {
+    "status": "submitted",
+    "id": "p_EE9ZliH1d9MufihL",
+    "status_url": "https://publish.fun/api/papers/p_EE9ZliH1d9MufihL"
+  }
+}

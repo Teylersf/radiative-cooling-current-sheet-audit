@@ -16,6 +16,16 @@ outflow-reversal and strict endpoint interpretations. The displayed modified
 Sweet-Parker algebra passes its own balances; domain restrictions and thermal
 stability are separate questions.
 
+Read the [complete mathematical comment](paper/manuscript.md),
+[nine-page PDF](paper/main.pdf) and
+[verified public release](https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.0.0).
+The [published software archive](https://doi.org/10.5281/zenodo.23780790)
+freezes 36 computational files at commit
+`8a4e64cc032cb0c57bb621b200903b0c0f0706c2`. The live README now adds
+manuscript links; the archived README and computational files remain preserved
+at that pin. [Publication status](submissions/publication-status.json) distinguishes
+public preprints, software publication, venue submissions and acceptance.
+
 These are original scalar and algebraic calculations, not a full MHD/PIC
 simulation or a reconstruction of the source's plotted trajectories. They do
 not prove physical radiative contraction is impossible. Underspecified
