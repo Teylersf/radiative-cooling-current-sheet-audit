@@ -1,14 +1,14 @@
 {
   "author": "Taylor Kalin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scientific_audit": "complete_supported_conditional_mathematical_comment",
   "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
   "github": {
     "state": "public_preprint_verified",
     "url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit",
-    "release": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.0.0",
-    "release_commit": "d2bda0e910bba0a0104b379dbb4a3f33a12569dc",
-    "pdf_sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193"
+    "release": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.1.0",
+    "release_commit": "03a7fdf6afb494d6837c14bca87481f6aae186a9",
+    "pdf_sha256": "d5a8b672d6eeffb74d1969a27ba251f693defc7dac60f7a8a7aa25a53c8b440f"
   },
   "zenodo": {
     "state": "published_anonymously_verified",
@@ -35,13 +35,13 @@
     "moderation_status_ui": "PUBLISHED"
   },
   "publishfun": {
-    "state": "revision_requested",
+    "state": "under_review",
     "paper_id": "p_EE9ZliH1d9MufihL",
-    "observed_at_utc": "2026-10-29T21:47:32.730576+00:00",
+    "observed_at_utc": "2026-10-29T21:59:35.906714+00:00",
     "http_status": 200,
     "url": "https://publish.fun/papers/p_EE9ZliH1d9MufihL",
     "review_type": "AI review",
-    "current_round": 1,
+    "current_round": 2,
     "editorial_state": "active",
     "published_at": null
   },
@@ -52,5 +52,5 @@
     "state": "pending_package_and_this_study_Publishfun_final_disposition"
   },
   "review_disclosure": "Venue AI review, public preprints, softwarepublication and independent human peerreview are separate states.",
-  "checked_at_utc": "2026-10-29T21:52:34.255563+00:00"
+  "checked_at_utc": "2026-10-29T21:59:36.020371+00:00"
 }

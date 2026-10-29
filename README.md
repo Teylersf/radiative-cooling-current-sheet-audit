@@ -32,6 +32,10 @@ The original computational software remains 1.0.0. [Response to AI editorial
 review](submissions/response-to-reviewers-round1.md) documents each change.
 The preprint is also available on [AiraXiv](https://airaxiv.com/papers/view/2610.0118/).
 
+[Attribution clarification](LICENSE_CLARIFICATION.md) corrects a copied title
+in the frozen software license line; Taylor Kalin's ownership and license
+terms remain the same.
+
 These are original scalar and algebraic calculations, not a full MHD/PIC
 simulation or a reconstruction of the source's plotted trajectories. They do
 not prove physical radiative contraction is impossible. Underspecified
