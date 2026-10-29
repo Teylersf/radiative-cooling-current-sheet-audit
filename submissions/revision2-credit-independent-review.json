@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "all_checks_passed": true,
+  "checked_at_utc": "2026-10-29T22:26:17.992341+00:00",
+  "study": "radiative-cooling-current-sheet-audit",
+  "version": "1.1.1",
+  "PDF": {
+    "path": "paper/main.pdf",
+    "sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
+    "bytes": 571421,
+    "pages": 13,
+    "author": "Taylor Kalin"
+  },
+  "manuscript": {
+    "path": "paper/manuscript.md",
+    "sha256": "05dbb07aac6b8354a6bca590cdcac244e1c8d8730eea76ed5c4aa1cdd589f2f3",
+    "bytes": 38737
+  },
+  "exact_delta_proof": {
+    "prior_independently_approved_MD_sha256": "a1c18e5f2580bef3f506e7d1f166d247eee15338d5182bf71b7d7a71bb5659c9",
+    "removing_only_credit_text_and_new_refs6_8_restores_exact_prior_bytes": true,
+    "prior_science_math_abstract_source_extracts_and_references1_5_unchanged": true,
+    "added_credit_text": "NumPy [6] supplies arrays, grids and seeded random controls; SciPy [7] supplies the direct DOP853 solver; Matplotlib [8] renders the three original figures. These citations credit the libraries actually used.",
+    "references_added": 3
+  },
+  "page_QA": {
+    "prior_all_page_coverage": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "changed_pages_visually_inspected": [
+      8,
+      9,
+      10,
+      13
+    ],
+    "remaining_pages_pixel_identical_to_prior_QA": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      11,
+      12
+    ],
+    "all_current_parent_renders_match_independent_rerender": true,
+    "pages": [
+      {
+        "page": 1,
+        "render_sha256": "7a8aaf6671cdc204ca66f964096227ae03565604d2d48df1cd7132d1e69b159f",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 2,
+        "render_sha256": "924b058256593182805637e683aaf9979f307e9d585afb86840f710886bf59e7",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 3,
+        "render_sha256": "1677b25b1d6f882df2bb1aea06c08fa3d1d91a1f56fd7685994bfb900ba402fb",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 4,
+        "render_sha256": "7b73686d031e7208d8566c39a49c16823d04e99496a66e948461b184d1a7827e",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 5,
+        "render_sha256": "4346a4647b99702ca2ead4042d08657c88cc4b53721027b83f9b88cd295fb4ce",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 6,
+        "render_sha256": "1fe90585d1b6284db579f9a5e1fd4fd23019542bfe4ea041b5aa857256caab85",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 7,
+        "render_sha256": "c95433ae1036651d7c0db7c6eb77794d31da82a75eaec4093b6ead052cec80e4",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 8,
+        "render_sha256": "9ec42b616a2a75a0d083e3c8b0ccac4160800ae6bdfa82d5b2cd89ef79028ff9",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": true,
+        "visually_reinspected": true
+      },
+      {
+        "page": 9,
+        "render_sha256": "12cd9c4ca18d152f41f147e9ed65dee75c64a2398cb2028b32566f489a265e24",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": true,
+        "visually_reinspected": true
+      },
+      {
+        "page": 10,
+        "render_sha256": "4e4a7b6c3517afd380545e5205349a0a2bb56cfa798e3af0122fc3d0bc1eb97f",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": true,
+        "visually_reinspected": true
+      },
+      {
+        "page": 11,
+        "render_sha256": "79236fd885c717a5cc164bd249e224933890e9b957c724c79b066a00a6bbd4b6",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 12,
+        "render_sha256": "f1649673fd449435e8a3fc90b319fe7bc48c136c3fb7f98aeea0e5fac4813e9e",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": false,
+        "visually_reinspected": false
+      },
+      {
+        "page": 13,
+        "render_sha256": "d6adbf2fddd006d85df7254a4b3208b7ef2093ee1d5fac4935e782722c3d67b5",
+        "independent_rerender_matches": true,
+        "changed_from_prior_all_page_QA": true,
+        "visually_reinspected": true
+      }
+    ],
+    "clipping_overlap_or_missing_glyphs": false,
+    "final_reference_page_all8_entries_legible": true
+  },
+  "library_credit_checks": {
+    "primary_metadata_receipt": "submissions/software-reference-checks.json",
+    "receipt_sha256": "4f4c7f781662607344d8d7ad25385c83c69baa275576dea8aaff9a931487a413",
+    "references": [
+      {
+        "software": "NumPy",
+        "doi": "10.1038/s41586-020-2649-2",
+        "metadata_matches_citation": true
+      },
+      {
+        "software": "SciPy",
+        "doi": "10.1038/s41592-019-0686-2",
+        "metadata_matches_citation": true
+      },
+      {
+        "software": "Matplotlib",
+        "doi": "10.1109/MCSE.2007.55",
+        "metadata_matches_citation": true
+      }
+    ],
+    "actual_numpy_arrays_grids_seeded_controls": true,
+    "actual_scipy_solve_ivp_DOP853": true,
+    "actual_matplotlib_three_original_figures": true,
+    "no_claim_cited_software_paper_originated_DOP853": true,
+    "referenced_programs_equal_frozen_H": true
+  },
+  "compiler_warning_or_box_issues": [],
+  "material_issues": [],
+  "recommended_edits": [],
+  "scientific_code_and_DOI_changed": false,
+  "science_reruns": 0,
+  "external_mutations": false,
+  "files_modified_by_review": [
+    "submissions/revision2-credit-independent-review.json"
+  ]
+}

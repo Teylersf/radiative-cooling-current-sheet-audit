@@ -35,9 +35,9 @@
     "moderation_status_ui": "PUBLISHED"
   },
   "publishfun": {
-    "state": "under_review",
+    "state": "revision_requested",
     "paper_id": "p_EE9ZliH1d9MufihL",
-    "observed_at_utc": "2026-10-29T21:59:35.906714+00:00",
+    "observed_at_utc": "2026-10-29T22:07:59.682154+00:00",
     "http_status": 200,
     "url": "https://publish.fun/papers/p_EE9ZliH1d9MufihL",
     "review_type": "AI review",
@@ -52,5 +52,5 @@
     "state": "pending_package_and_this_study_Publishfun_final_disposition"
   },
   "review_disclosure": "Venue AI review, public preprints, softwarepublication and independent human peerreview are separate states.",
-  "checked_at_utc": "2026-10-29T21:59:36.020371+00:00"
+  "checked_at_utc": "2026-10-29T22:10:16.974586+00:00"
 }

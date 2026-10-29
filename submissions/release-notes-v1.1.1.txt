@@ -1,0 +1,7 @@
+Taylor Kalin
+
+Complete supplementary numerical control specifications, direct immutable program/result mirrors, and a precise distinction between Uzdensky and McKinney's evolutionary and thermal-stability tests. The full scientific text is retained; standard NumPy, SciPy and Matplotlib citations credit their actual use. Thirteen-page PDF independently checked.
+
+Software 1.0.0 and DOI 10.5281/zenodo.23780790 are unchanged. The numerical counts supplement the displayed analytic arguments. No original source trajectories or full MHD/PIC solution are claimed.
+
+AI editorial review remains ongoing at release time.

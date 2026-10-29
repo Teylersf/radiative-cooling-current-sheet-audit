@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T22:04:14.282217+00:00",
+  "paper_id": "p_EE9ZliH1d9MufihL",
+  "round": 2,
+  "exact_stored_fields": {
+    "title": true,
+    "abstract": true,
+    "keywords": true,
+    "content_md": true
+  },
+  "submitted_body_sha256": "b368db844c22589482eceae3107d4dfe024e4d75837020446698036b23aadce3",
+  "stored_body_sha256": "b368db844c22589482eceae3107d4dfe024e4d75837020446698036b23aadce3",
+  "main_science_exact_after_image_URL_normalization": true,
+  "image_checks": [
+    {
+      "public_url": "https://files.publish.fun/uploads/up_fadSZz79ivJ1FJDa/figures/figure-1.png",
+      "http_status": 200,
+      "served_bytes": 179582,
+      "served_sha256": "664231edb3ae6c5875381d2751d63c211d0a6b911f4e09003a7fbf8d159c456b",
+      "local_file": "figures/pressure-and-profile.png",
+      "dimensions": [
+        2100,
+        798
+      ],
+      "decoded_RGBA_pixels_identical": true
+    },
+    {
+      "public_url": "https://files.publish.fun/uploads/up_fadSZz79ivJ1FJDa/figures/figure-2.png",
+      "http_status": 200,
+      "served_bytes": 198551,
+      "served_sha256": "07ac77a363a604436e0c58b48699b278abe325a2b46a7c61ffb79396b8ae6478",
+      "local_file": "figures/cumulative-integral.png",
+      "dimensions": [
+        2100,
+        756
+      ],
+      "decoded_RGBA_pixels_identical": true
+    },
+    {
+      "public_url": "https://files.publish.fun/uploads/up_fadSZz79ivJ1FJDa/figures/figure-3.png",
+      "http_status": 200,
+      "served_bytes": 129615,
+      "served_sha256": "134d63d34910c7ce000539fe6b552475a69fc5e45d1c4866773bdad588b35ec4",
+      "local_file": "figures/steady-branch-domain.png",
+      "dimensions": [
+        1638,
+        882
+      ],
+      "decoded_RGBA_pixels_identical": true
+    }
+  ],
+  "status_observed": "under_review",
+  "acceptance_claimed": false,
+  "authorship": "Canonical title-page TaylorKalin and disclosures retained in exact stored body; submitted author metadata lists TaylorKalin and supplied ORCID. No agent byline used here."
+}

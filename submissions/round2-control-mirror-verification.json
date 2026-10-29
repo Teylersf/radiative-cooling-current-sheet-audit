@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checked_at_utc": "2026-10-29T22:11:52.993241+00:00",
+  "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "software_version": "1.0.0",
+  "files": [
+    {
+      "path": "experiments/verify_pressure_independently.py",
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/experiments/verify_pressure_independently.py",
+      "http_status": 200,
+      "authentication_used": false,
+      "bytes": 18232,
+      "sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b",
+      "matches_frozen_git_blob": true
+    },
+    {
+      "path": "results/independent-pressure.json",
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/results/independent-pressure.json",
+      "http_status": 200,
+      "authentication_used": false,
+      "bytes": 15129,
+      "sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6",
+      "matches_frozen_git_blob": true
+    },
+    {
+      "path": "experiments/verify_asymptotics_independently.py",
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/experiments/verify_asymptotics_independently.py",
+      "http_status": 200,
+      "authentication_used": false,
+      "bytes": 10113,
+      "sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971",
+      "matches_frozen_git_blob": true
+    },
+    {
+      "path": "results/independent-asymptotics.json",
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/results/independent-asymptotics.json",
+      "http_status": 200,
+      "authentication_used": false,
+      "bytes": 35838,
+      "sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a",
+      "matches_frozen_git_blob": true
+    },
+    {
+      "path": "experiments/verify_steady_state_independently.py",
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/experiments/verify_steady_state_independently.py",
+      "http_status": 200,
+      "authentication_used": false,
+      "bytes": 10443,
+      "sha256": "7db46d922e8f8c83b0d68ccf7302e74e8fa29f56884b098cf75f550e59cb649a",
+      "matches_frozen_git_blob": true
+    },
+    {
+      "path": "results/independent-steady-state.json",
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/results/independent-steady-state.json",
+      "http_status": 200,
+      "authentication_used": false,
+      "bytes": 12229,
+      "sha256": "2c79b896a233da796d443aa24cd4d7a0943617d30e93c226ac8d3c41d0f9aa26",
+      "matches_frozen_git_blob": true
+    }
+  ],
+  "scope": "Anonymous public pinned program/JSON mirrors, not new numerical execution or a replacement DOI."
+}

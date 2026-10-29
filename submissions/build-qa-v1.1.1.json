@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "version": "1.1.1",
+  "status": "pass",
+  "checked_at_utc": "2026-10-29T22:27:24.306790+00:00",
+  "pdf_pages": 13,
+  "pdf_bytes": 571421,
+  "pdf_sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
+  "manuscript_sha256": "05dbb07aac6b8354a6bca590cdcac244e1c8d8730eea76ed5c4aa1cdd589f2f3",
+  "author": "Taylor Kalin",
+  "initial_full_visual_page_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "final_changed_pages_visually_inspected": [
+    8,
+    9
+  ],
+  "remaining_final_pages_pixel_identical_to_inspected_renders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13
+  ],
+  "all_final_pages_visually_passed": true,
+  "Tectonic_build": "success",
+  "TeX_warning_or_box_issues": [],
+  "fontconfig_environment_notice": "Default fontconfig config unavailable; compilation succeeded and all final pages visually checked with no missing glyphs.",
+  "source_expressions_preserved": 18,
+  "original_figures": 3,
+  "tables": 1,
+  "references": 8,
+  "direct_pinned_program_JSON_links_present_and_verified": 6,
+  "scientific_code_commit_unchanged": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "software_DOI_unchanged": "10.5281/zenodo.23780790",
+  "revision_round3_payload_sha256": "b0b7daa9b671c9f3ccc9f0bc69e0460e47e0041989e4584a13316a00507d5481",
+  "response_letter_sha256": "1ea0a57a66278c69c03f99acbdf3019c1c8bf8c612320d0bd612c3b941c7270e",
+  "no_commit_push_submission_by_revision_preparer": true,
+  "all_checks_passed": true,
+  "independent_review": {
+    "path": "submissions/revision2-independent-review.json",
+    "sha256": "09075eadc5bfb6d38ce0c172192c9ab21b49662912cb991aaacb77e9c6a76f2f",
+    "status": "pass",
+    "visually_inspected_pages": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "final_credit_delta_independent_receipt": "submissions/revision2-credit-independent-review.json",
+  "final_credit_delta_independent_receipt_sha256": "d8a363571470442bc2c045433672dab81ed76661477c5d8957e3831434a384ca",
+  "primary_reviewer_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "final_delta_pages_visually_inspected": [
+    8,
+    9,
+    10,
+    13
+  ],
+  "remaining_pages_pixel_identical_to_previously_passed_render": true,
+  "scientific_programs_byte_identical_to_archive": true,
+  "scientific_scope": "Conditional mathematical comment; complete control specifications supplementary and not load-bearing; no source simulation reproduction.",
+  "final_compiler": "Tectonic success with no layout warnings; previous desktop compiler successful; final sources checked separately."
+}

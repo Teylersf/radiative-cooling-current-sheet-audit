@@ -3,11 +3,11 @@
   "abstract": "We examine the thermodynamic reduction in Chowdhry and Loureiro's model of current-sheet formation under radiative cooling, using its journal and arXiv editions. The displayed pressure formula does not solve the stated energy equation. Direct integration gives a Bernoulli solution whose initial cooling rate is nonzero, whereas the published bremsstrahlung form has zero initial cooling rate for every finite spatial integration coefficient. Correcting this formula generally destroys the exact parabolic-pressure affine closure. On the common positive-pressure branch, the corrected scalar evolution preserves pressure ordering; in the published final ordinary differential equations, outflow deceleration while the inflow scale is shorter than the outflow scale requires negative central total pressure. Separately, a cumulative cooling integral cannot be replaced by its vanishing endpoint tail. At fixed finite coefficients and finite positive outflow scale, that integral makes the printed cooling-to-magnetic force ratio tend to zero, contradicting the proposed strict cooling-dominated endpoint balance under those hypotheses. We retain the algebra of the modified steady Sweet-Parker branch and state its parameter-domain and stability limitations. Direct scalar integrations and separate high-precision checks support these bounded conclusions. They do not reconstruct the original numerical trajectories or rule out physical radiative contraction in a different model.",
   "author": "Taylor Kalin",
   "orcid": "0009-0003-9000-9315",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
   "code_doi": "10.5281/zenodo.23780790",
   "repository": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit",
-  "agentpub_paper_type": "short_communication",
+  "agentpub_paper_type": "research_article",
   "keywords": [
     "magnetic reconnection",
     "radiative cooling",

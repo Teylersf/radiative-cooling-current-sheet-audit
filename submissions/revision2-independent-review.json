@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T22:16:14.145864+00:00",
+  "study": "radiative-cooling-current-sheet-audit",
+  "manuscript_version": "1.1.1",
+  "status": "pass",
+  "all_checks_passed": true,
+  "scope": "Final scientific-control-specification and requested page7-13visual QA; existing analytic/source-expression review retained; no new simulation, external mutation or independent human peer review.",
+  "manuscript": {
+    "path": "paper/manuscript.md",
+    "bytes": 37993,
+    "sha256": "a1c18e5f2580bef3f506e7d1f166d247eee15338d5182bf71b7d7a71bb5659c9"
+  },
+  "PDF": {
+    "path": "paper/main.pdf",
+    "bytes": 568495,
+    "sha256": "3d234d4fa93e9b41b0e89b17c60ab374f1b5756f0ad703c5a21ead440984f68a",
+    "pages": 13,
+    "metadata_author": "Taylor Kalin"
+  },
+  "inputs": [
+    {
+      "path": "experiments/verify_pressure_independently.py",
+      "sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b"
+    },
+    {
+      "path": "results/independent-pressure.json",
+      "sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6"
+    },
+    {
+      "path": "experiments/verify_asymptotics_independently.py",
+      "sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971"
+    },
+    {
+      "path": "results/independent-asymptotics.json",
+      "sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a"
+    },
+    {
+      "path": "experiments/verify_steady_state_independently.py",
+      "sha256": "7db46d922e8f8c83b0d68ccf7302e74e8fa29f56884b098cf75f550e59cb649a"
+    },
+    {
+      "path": "results/independent-steady-state.json",
+      "sha256": "2c79b896a233da796d443aa24cd4d7a0943617d30e93c226ac8d3c41d0f9aa26"
+    },
+    {
+      "path": "audit/source-equation-extracts.json",
+      "sha256": "c562083b05fc2a29fae36dd61f7e5b102277b7c3415747d86fa55b32db1383c2"
+    },
+    {
+      "path": "submissions/round2-control-mirror-verification.json",
+      "sha256": "0810ac24886a8e623f8f5ddc4ad4e11df719bdd6168285326aca69245a22adb7"
+    }
+  ],
+  "visual_QA": {
+    "pages_inspected": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "independent_PDF_rerender_dpi": 120,
+    "images": [
+      {
+        "page": 7,
+        "supplied_render_sha256": "c95433ae1036651d7c0db7c6eb77794d31da82a75eaec4093b6ead052cec80e4",
+        "independent_current_PDF_render_sha256": "c95433ae1036651d7c0db7c6eb77794d31da82a75eaec4093b6ead052cec80e4",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      },
+      {
+        "page": 8,
+        "supplied_render_sha256": "4a81928a900cc9eddccd1860aaebdd2e014e38c1fd5fe99fcf7a0cb5f4bfe96b",
+        "independent_current_PDF_render_sha256": "4a81928a900cc9eddccd1860aaebdd2e014e38c1fd5fe99fcf7a0cb5f4bfe96b",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      },
+      {
+        "page": 9,
+        "supplied_render_sha256": "cd68d06f8cbc2abfb0778cab61e174dcdb58da7ecb45a16f7510e7b83b37e78a",
+        "independent_current_PDF_render_sha256": "cd68d06f8cbc2abfb0778cab61e174dcdb58da7ecb45a16f7510e7b83b37e78a",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      },
+      {
+        "page": 10,
+        "supplied_render_sha256": "e72be330635047a26e890dc1c223f149d692b0ee9096a034689ab87d884f5bf7",
+        "independent_current_PDF_render_sha256": "e72be330635047a26e890dc1c223f149d692b0ee9096a034689ab87d884f5bf7",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      },
+      {
+        "page": 11,
+        "supplied_render_sha256": "79236fd885c717a5cc164bd249e224933890e9b957c724c79b066a00a6bbd4b6",
+        "independent_current_PDF_render_sha256": "79236fd885c717a5cc164bd249e224933890e9b957c724c79b066a00a6bbd4b6",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      },
+      {
+        "page": 12,
+        "supplied_render_sha256": "f1649673fd449435e8a3fc90b319fe7bc48c136c3fb7f98aeea0e5fac4813e9e",
+        "independent_current_PDF_render_sha256": "f1649673fd449435e8a3fc90b319fe7bc48c136c3fb7f98aeea0e5fac4813e9e",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      },
+      {
+        "page": 13,
+        "supplied_render_sha256": "142a4adb781ae429e6ccc692d5bb4e142880f2d32970e5a6ee18754b91b33bcf",
+        "independent_current_PDF_render_sha256": "142a4adb781ae429e6ccc692d5bb4e142880f2d32970e5a6ee18754b91b33bcf",
+        "exact_equality": true,
+        "visual_inspection": "pass"
+      }
+    ],
+    "status": "pass",
+    "findings": "All requested pages readable, no clipping/overlap/broken symbols. Expanded scalar recipe wraps across8/9without content loss;18source displays and reference mirror labels remain legible.",
+    "pages1_to6_not_visually_claimed_by_this_receipt": true
+  },
+  "control_specification_checks": [
+    {
+      "control": "4096outflowstates",
+      "status": "pass",
+      "recipe": "NumPyPCG64seed250813081; successively draw4arrays length4096 from U[-4,0),U[-2,1),U[-3,2),U[0,1); xi=exp(u1),eta=xi+exp(u2),P0X=exp(u3),theta=u4; overwrite theta[0]=0; gamma5/3; require every printedEq7acceleration>0.",
+      "negative_controls": "xi=.5,eta=1,P0X=1,theta=-.1and-2 give opposite acceleration signs.",
+      "checks_against_frozen_code_and_output": true
+    },
+    {
+      "control": "150digitcumulative",
+      "status": "pass",
+      "recipe": "48/96GaussLegendre;tc1,eta2,A1,P0X1,Ctilde.1;alpha2/3or1; dyadicn10,20,40,80,160,320; integrate base[.5,1] then scale panels.",
+      "error_semantics": "Rule differences relative<1e-65; analytic cumulative relative<1e-120.",
+      "checks_against_frozen_code_and_output": true
+    },
+    {
+      "control": "frozen_scalar_subleading",
+      "status": "pass",
+      "recipe": "eta_c2;(H,E)=(1,.7),(-.5,.7),(0,.7);xi=10^-k,k3,6,9,12,18,24,36,48; inverse speed[4/u+3H/u^(2/3)+1.4]^-1/2;u=xi*z^6; predictedAandDfromEq10, H0amplitude E*A\u00b2/(5eta_c),power4/3.",
+      "error_semantics": "48/96rule relative<1e-65; final amplitude relative<1e-12; last2point slope absolute error<1e-10.",
+      "coupled_branch_numerical_validation_claimed": false,
+      "checks_against_frozen_code_and_output": true
+    },
+    {
+      "control": "steady_clock_sign_domain_grids",
+      "status": "pass",
+      "recipe": "24=3(a,b)pairs{(2,.5),(1.2,.4),(3,-.5)}x4beta{.01,.1,1,10}x2calR{10,100};S1e8,gamma5/3,rel_tol3e-14.9clockcases samepairsxGamma{.5,1,2},Cbar2,rho3,P4.6signb{0,.5,1/3,-.5,2/3,.75}.4domaintriples match code exactly.",
+      "checks_against_frozen_code_and_output": true
+    },
+    {
+      "control": "primary_pressure_protocol",
+      "status": "pass",
+      "finding": "80caseparameter/history grid,318total integrations, DOP853tol/maxstep/outputtimes/errornormalization and actual separate environments remain consistent with frozen programs/results."
+    }
+  ],
+  "supplementary_status": {
+    "counts_explicitly_non_load_bearing": true,
+    "analytic_conclusions_not_dependent_on_archived_counts": true,
+    "no_source_trajectory_or_physical_error_claim_added": true,
+    "software_archive_remains_version1_0_0": true
+  },
+  "mirror_checks": {
+    "receipt_path": "submissions/round2-control-mirror-verification.json",
+    "receipt_sha256": "0810ac24886a8e623f8f5ddc4ad4e11df719bdd6168285326aca69245a22adb7",
+    "files": 6,
+    "all_links_present_at_exact_computational_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+    "all6_local_bytes_independently_match_frozen_Git_blobs": true,
+    "recorded_anonymous_HTTP200": true,
+    "HTTP_retrieval_repeated_by_this_review": false,
+    "semantics": "Prior fresh anonymous retrieval read from the methods-agent receipt; this review independently compared all6local files and raw Git blobs to the recorded hashes and manuscript URLs."
+  },
+  "Uzdensky_primary_check": {
+    "status": "pass",
+    "source": "arXiv1007.0774v1 Section4.1 pp19-21; actual text read and pp20-21 visually inspected.",
+    "finding": "Eq57 is first evolutionary; subsequent p21derivative test separately gives same inequality for thermal stability and explicitly calls brems branch unstable. Manuscript now credits both and distinguishes beta_T from upstream beta.",
+    "unchanged_transfer_to_variable_length_model_claimed": false
+  },
+  "source_expression_fidelity": {
+    "source_displays_checked": 18,
+    "all_normalized_math_matches_publisher_extraction": true,
+    "mathematical_grouping_or_signs_changed": false
+  },
+  "issues": [],
+  "new_numerical_program_execution_for_this_review": false,
+  "new_MHD_or_PIC_simulations": 0,
+  "files_modified_by_this_review": [
+    "submissions/revision2-independent-review.json"
+  ]
+}

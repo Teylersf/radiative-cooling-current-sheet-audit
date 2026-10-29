@@ -17,8 +17,8 @@ Sweet-Parker algebra passes its own balances; domain restrictions and thermal
 stability are separate questions.
 
 Read the [complete mathematical comment](paper/manuscript.md),
-[12-page PDF](paper/main.pdf) and
-[verified public release](https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.1.0).
+[13-page PDF](paper/main.pdf) and
+[verified public release](https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.1.1).
 The [published software archive](https://doi.org/10.5281/zenodo.23780790)
 freezes 36 computational files at commit
 `8a4e64cc032cb0c57bb621b200903b0c0f0706c2`. The live README now adds
@@ -26,9 +26,9 @@ manuscript links; the archived README and computational files remain preserved
 at that pin. [Publication status](submissions/publication-status.json) distinguishes
 public preprints, software publication, venue submissions and acceptance.
 
-Manuscript 1.1.0 adds 18 exact source-equation extracts, a conditional coupled-ODE
+Manuscript 1.1.1 includes 18 exact source-equation extracts, a conditional coupled-ODE
 remainder proof, full numerical protocol, and direct DataCite/archive checks.
-The original computational software remains 1.0.0. [Response to AI editorial
+The complete supplementary control grids and proper numerical-library citations are included. The original computational software remains 1.0.0. [Response to AI editorial
 review](submissions/response-to-reviewers-round1.md) documents each change.
 The preprint is also available on [AiraXiv](https://airaxiv.com/papers/view/2610.0118/).
 

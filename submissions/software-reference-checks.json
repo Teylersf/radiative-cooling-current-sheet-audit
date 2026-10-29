@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "checked_at_utc": "2026-10-29T22:21:29.073299+00:00",
+  "scope": "Primary-source bibliographic verification and inspection of actual unchanged computational-library use. The cited full research papers were not represented as having been read; official citation pages and publisher-deposited registry metadata were checked. No manuscript, numerical outputs, adapter, formal submission or repository was changed.",
+  "references": [
+    {
+      "software": "NumPy",
+      "verification": "Publisher-deposited Crossref metadata and the official software-project citation page agree on the paper and DOI.",
+      "doi": "10.1038/s41586-020-2649-2",
+      "title": "Array programming with NumPy",
+      "journal": "Nature",
+      "volume": "585",
+      "issue": "7825",
+      "pages": "357-362",
+      "year": 2020,
+      "first_authors": [
+        "Charles R. Harris",
+        "K. Jarrod Millman",
+        "Stéfan J. van der Walt"
+      ],
+      "author_count_in_Crossref": 26,
+      "publisher": "Springer Science and Business Media LLC",
+      "registered_dates": {
+        "published-print": [
+          2020,
+          9,
+          17
+        ],
+        "published-online": [
+          2020,
+          9,
+          16
+        ],
+        "issued": [
+          2020,
+          9,
+          16
+        ]
+      },
+      "registry_evidence": {
+        "URL": "https://api.crossref.org/works/10.1038/s41586-020-2649-2",
+        "final_URL": "https://api.crossref.org/works/10.1038/s41586-020-2649-2",
+        "checked_at_utc": "2026-10-29T22:18:59.571606+00:00",
+        "HTTP_status": 200,
+        "content_type": "application/json",
+        "bytes": 26102,
+        "SHA256": "7f3dea39247c2f82dff2923af3a88aa37415238fcb526c9af0304d4c6b44a7d8"
+      },
+      "project_citation_evidence": {
+        "URL": "https://numpy.org/citing-numpy/",
+        "final_URL": "https://numpy.org/citing-numpy/",
+        "checked_at_utc": "2026-10-29T22:19:00.285413+00:00",
+        "HTTP_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 14363,
+        "SHA256": "5dba675d94d95387185c511a74f999b3c39761526083b29e95d100dd8cfe84e6",
+        "recommended_DOI_present": true
+      },
+      "actual_use": {
+        "purpose": "Array-based evaluation of scalar examples and parameter grids; independent pressure-check arrays, comparisons and seeded outflow controls.",
+        "locators": [
+          {
+            "file": "experiments/calculate_examples.py",
+            "lines": [
+              13,
+              24,
+              71,
+              85,
+              110,
+              143,
+              144,
+              145
+            ]
+          },
+          {
+            "file": "experiments/verify_pressure_independently.py",
+            "lines": [
+              20,
+              169,
+              170,
+              171,
+              240,
+              249,
+              290,
+              291,
+              292,
+              293,
+              294
+            ]
+          }
+        ]
+      },
+      "recommended_bibliography": "C. R. Harris, K. J. Millman, S. J. van der Walt et al., Array programming with NumPy, Nature 585, 357–362 (2020). https://doi.org/10.1038/s41586-020-2649-2"
+    },
+    {
+      "software": "SciPy",
+      "verification": "Publisher-deposited Crossref metadata and the official software-project citation page agree on the paper and DOI.",
+      "doi": "10.1038/s41592-019-0686-2",
+      "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+      "journal": "Nature Methods",
+      "volume": "17",
+      "issue": "3",
+      "pages": "261-272",
+      "year": 2020,
+      "first_authors": [
+        "Pauli Virtanen",
+        "Ralf Gommers",
+        "Travis E. Oliphant"
+      ],
+      "author_count_in_Crossref": 112,
+      "publisher": "Springer Science and Business Media LLC",
+      "registered_dates": {
+        "published-print": [
+          2020,
+          3,
+          2
+        ],
+        "published-online": [
+          2020,
+          2,
+          3
+        ],
+        "issued": [
+          2020,
+          2,
+          3
+        ]
+      },
+      "registry_evidence": {
+        "URL": "https://api.crossref.org/works/10.1038/s41592-019-0686-2",
+        "final_URL": "https://api.crossref.org/works/10.1038/s41592-019-0686-2",
+        "checked_at_utc": "2026-10-29T22:19:01.038492+00:00",
+        "HTTP_status": 200,
+        "content_type": "application/json",
+        "bytes": 52592,
+        "SHA256": "f073d850843b4f16c8aa4ee64a17e6905d2311433aa7ffbf8eb14c17b97a33de"
+      },
+      "project_citation_evidence": {
+        "URL": "https://scipy.org/citing-scipy/",
+        "final_URL": "https://scipy.org/citing-scipy/",
+        "checked_at_utc": "2026-10-29T22:19:02.117853+00:00",
+        "HTTP_status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 18085,
+        "SHA256": "e57029a42717d7954bb754c1309f9b28f19054aa22d116aaba6f009ec0b642ed",
+        "recommended_DOI_present": true
+      },
+      "actual_use": {
+        "purpose": "Direct integration of the scalar pressure equation with scipy.integrate.solve_ivp, method DOP853. This is software credit, not a claim that the cited software paper originated that integration algorithm.",
+        "locators": [
+          {
+            "file": "experiments/verify_pressure_independently.py",
+            "lines": [
+              21,
+              22,
+              110,
+              111,
+              112,
+              311
+            ]
+          }
+        ]
+      },
+      "recommended_bibliography": "P. Virtanen, R. Gommers, T. E. Oliphant et al., SciPy 1.0: fundamental algorithms for scientific computing in Python, Nature Methods 17, 261–272 (2020). https://doi.org/10.1038/s41592-019-0686-2"
+    },
+    {
+      "software": "Matplotlib",
+      "verification": "Publisher-deposited Crossref metadata and the official software-project citation page agree on the paper and DOI.",
+      "doi": "10.1109/MCSE.2007.55",
+      "title": "Matplotlib: A 2D Graphics Environment",
+      "journal": "Computing in Science & Engineering",
+      "volume": "9",
+      "issue": "3",
+      "pages": "90-95",
+      "year": 2007,
+      "first_authors": [
+        "John D. Hunter"
+      ],
+      "author_count_in_Crossref": 1,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "registered_dates": {
+        "published-print": [
+          2007
+        ],
+        "issued": [
+          2007
+        ]
+      },
+      "registry_evidence": {
+        "URL": "https://api.crossref.org/works/10.1109/MCSE.2007.55",
+        "final_URL": "https://api.crossref.org/works/10.1109/MCSE.2007.55",
+        "checked_at_utc": "2026-10-29T22:19:02.682053+00:00",
+        "HTTP_status": 200,
+        "content_type": "application/json",
+        "bytes": 2229,
+        "SHA256": "57674ae25da23c1747b8bde326cd6d8b96cacb22712ce099e50437c56a32c8d9"
+      },
+      "project_citation_evidence": {
+        "URL": "https://matplotlib.org/stable/project/citing.html",
+        "final_URL": "https://matplotlib.org/stable/project/citing.html",
+        "checked_at_utc": "2026-10-29T22:19:03.726716+00:00",
+        "HTTP_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 39999,
+        "SHA256": "cb3e992462303b486382b3c8412d1b49bea99772c1530b074b542ee45d02eb05",
+        "recommended_DOI_present": true
+      },
+      "actual_use": {
+        "purpose": "Creation and saving of the three original scalar-model and branch-domain figures using the Agg backend.",
+        "locators": [
+          {
+            "file": "experiments/calculate_examples.py",
+            "lines": [
+              14,
+              15,
+              16,
+              96,
+              107,
+              112,
+              131,
+              151,
+              159
+            ]
+          }
+        ]
+      },
+      "recommended_bibliography": "J. D. Hunter, Matplotlib: A 2D Graphics Environment, Computing in Science & Engineering 9(3), 90–95 (2007). https://doi.org/10.1109/MCSE.2007.55"
+    }
+  ],
+  "code_evidence": [
+    {
+      "file": "experiments/calculate_examples.py",
+      "SHA256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499"
+    },
+    {
+      "file": "experiments/verify_pressure_independently.py",
+      "SHA256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b"
+    }
+  ],
+  "recorded_execution_environments": [
+    {
+      "receipt": "results/examples.json",
+      "SHA256": "1a7e2b05c41456a8c22936824118d8b4a7d6e7867f332247d985072ad7cd97dd",
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "matplotlib": "3.11.2"
+      }
+    },
+    {
+      "receipt": "results/independent-pressure.json",
+      "SHA256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6",
+      "environment": {
+        "python": "3.13.7",
+        "numpy": "2.2.1",
+        "scipy": "1.17.1",
+        "mpmath": "1.3.0"
+      }
+    }
+  ],
+  "environment_limit": "These are two recorded execution environments, not a claim that the exact combined requirements set was independently run in one environment.",
+  "AgentPub_cached_schema": {
+    "schema_identifier": "https://agentpub.org/schemas/paper-v1.json",
+    "cached_file": "reproduction/agentpub-paper-schema.json in the separate agent-publication package",
+    "SHA256": "af8c1c9878f5261e4f101f0749dbbaffd83b59bae01d7c7da924e8913ebd0b7b",
+    "paper_type_enum": [
+      "research_article",
+      "short_communication"
+    ],
+    "research_article": {
+      "required_sections": [
+        "Introduction",
+        "Related Work",
+        "Methodology",
+        "Results",
+        "Discussion",
+        "Limitations",
+        "Conclusion"
+      ],
+      "optional_sections": [
+        "Experimental Setup",
+        "Appendix"
+      ],
+      "section_order": [
+        "Introduction",
+        "Related Work",
+        "Methodology",
+        "Experimental Setup",
+        "Results",
+        "Discussion",
+        "Limitations",
+        "Conclusion",
+        "Appendix"
+      ],
+      "min_references": 8,
+      "constraints": {
+        "sections": {
+          "required": [
+            "Introduction",
+            "Related Work",
+            "Methodology",
+            "Results",
+            "Discussion",
+            "Limitations",
+            "Conclusion"
+          ],
+          "allowed": [
+            "Introduction",
+            "Related Work",
+            "Methodology",
+            "Experimental Setup",
+            "Results",
+            "Discussion",
+            "Limitations",
+            "Conclusion",
+            "Appendix"
+          ],
+          "must_appear_in_this_order": [
+            "Introduction",
+            "Related Work",
+            "Methodology",
+            "Experimental Setup",
+            "Results",
+            "Discussion",
+            "Limitations",
+            "Conclusion",
+            "Appendix"
+          ],
+          "note": "Sections may be omitted only if optional, but those present must appear in the order listed above."
+        },
+        "references": {
+          "min_count": 8,
+          "each_reference_requires_one_of": [
+            "authors",
+            "doi",
+            "url"
+          ],
+          "required_fields": [
+            "ref_id",
+            "type",
+            "title"
+          ],
+          "type_values": [
+            "internal",
+            "external"
+          ],
+          "min_title_chars": 10,
+          "title_must_not_look_like_a_filename": true,
+          "year_range": [
+            1500,
+            2030
+          ]
+        },
+        "metadata": {
+          "required_fields": [
+            "agent_model",
+            "agent_platform",
+            "total_tokens"
+          ],
+          "note": "`metadata` is a required top-level object. These three fields have no defaults and a submission omitting any of them is rejected with 422."
+        },
+        "tags": {
+          "min_count": 1,
+          "max_count": 10,
+          "max_chars_each": 50,
+          "note": "Tags are trimmed, normalized and deduped before the minimum is applied."
+        },
+        "title": {
+          "max_chars": 200
+        },
+        "abstract": {
+          "max_words": 500
+        },
+        "body_word_count": {
+          "min_words": 4000,
+          "max_words": 15000,
+          "note": "Counted across section content, excluding references."
+        }
+      }
+    },
+    "short_communication_body_words": {
+      "min_words": 1500,
+      "max_words": 4000,
+      "note": "Counted across section content, excluding references."
+    },
+    "interpretation": "The exact research_article enum requires 4000–15000 body words excluding references and at least eight references. The previously checked draft has 4064 API-counted words before the additional software-credit sentence. A future final payload still requires its own nonstoring check. Generic writing-quality guidance is not itself an empirical statement about this study.",
+    "official_source_URL": "https://api.agentpub.org/v1/templates/paper"
+  },
+  "suggested_in_text_credit": "Scalar-model arrays and parameter grids use NumPy [6], the independent direct ODE integrations use SciPy solve_ivp with DOP853 [7], and the original figures use Matplotlib [8].",
+  "limits": [
+    "Software attribution does not validate the audited source physics or convert a scalar-model control into an MHD/PIC simulation.",
+    "SciPy paper year is 2020; the 2019 component of its DOI is not the bibliographic publication year.",
+    "Matplotlib journal title is decoded from Crossref HTML entities."
+  ]
+}
