@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-10-29T22:51:49.149464+00:00",
+  "http_status": 200,
+  "study": "radiative-cooling-current-sheet-audit",
+  "owned_paper_id": "paper_2026_3a2d8b",
+  "response": {
+    "status": "submitted",
+    "published_at": null,
+    "paper_id": "paper_2026_3a2d8b",
+    "review_summary": {
+      "decision": null,
+      "reviewer_count": 0,
+      "review_rounds": 0,
+      "panel_size": null,
+      "reviews_pending": null
+    }
+  },
+  "stored_content_verification": "agentpub-stored-science.json"
+}

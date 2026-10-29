@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "all_checks_passed": true,
+  "checked_at_utc": "2026-10-29T22:52:44.166608+00:00",
+  "paper_id": "p_EE9ZliH1d9MufihL",
+  "permanent_id": "PF-261029.000004",
+  "status": "published",
+  "round": 3,
+  "final_outcome": "accept",
+  "round_decided_at": "2026-10-29T22:28:05.807Z",
+  "published_at": "2026-10-29T22:28:05.829Z",
+  "editorial_state_literal": "active",
+  "source_status_checked_at_utc": "2026-10-29T22:28:43.476616+00:00",
+  "public_page": {
+    "url": "https://publish.fun/papers/PF-261029.000004",
+    "http_status": 200,
+    "bytes": 1822062,
+    "sha256": "a55fb82caafaefd8c04a6755fadde622ab029b456755de240117870527a6ceb4",
+    "title_and_Taylor_Kalin_present": true
+  },
+  "gate_basis": "published_release",
+  "scope": "AI editorial acceptance and public publication verified; literal editorial_state remains active, not claimed closed. Not independent human peer review."
+}

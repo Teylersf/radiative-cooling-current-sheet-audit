@@ -1,14 +1,14 @@
 {
   "author": "Taylor Kalin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scientific_audit": "complete_supported_conditional_mathematical_comment",
   "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
   "github": {
     "state": "public_preprint_verified",
     "url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit",
-    "release": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.1.0",
-    "release_commit": "03a7fdf6afb494d6837c14bca87481f6aae186a9",
-    "pdf_sha256": "d5a8b672d6eeffb74d1969a27ba251f693defc7dac60f7a8a7aa25a53c8b440f"
+    "release": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.1.1",
+    "release_commit": "355dcb0d231796a4f4f06144d22542b6645ec0ca",
+    "pdf_sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff"
   },
   "zenodo": {
     "state": "published_anonymously_verified",
@@ -25,32 +25,75 @@
     "classification": "AI-generated with human author",
     "category": "Theoretical",
     "public_id": "2610.0118",
-    "last_ui_check_utc": "2026-10-29T21:52:27.711485+00:00",
+    "last_ui_check_utc": "2026-10-29T22:50:00Z",
     "public_url": "https://airaxiv.com/papers/view/2610.0118/",
     "url": "https://airaxiv.com/papers/view/2610.0118/",
-    "public_version": 1,
-    "public_manuscript_version": "1.0.0",
-    "public_pdf_sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+    "public_version": 2,
+    "public_manuscript_version": "1.1.0",
+    "public_pdf_sha256": "d5a8b672d6eeffb74d1969a27ba251f693defc7dac60f7a8a7aa25a53c8b440f",
     "anonymous_pdf_verified": true,
-    "moderation_status_ui": "PUBLISHED"
+    "moderation_status_ui": "PUBLISHED",
+    "initial_submission_id": 1282,
+    "v2_update_submission_id": 1283,
+    "public_pdf_bytes": 559440,
+    "public_pdf_verification_receipt": "airaxiv-pdf-verification-v2.json",
+    "pending_submission_id": 1291,
+    "requested_public_version": 3,
+    "pending_manuscript_version": "1.1.1",
+    "pending_state": "under_moderation",
+    "pending_submission_url": "https://airaxiv.com/papers/submissions/1291/",
+    "observation_basis": "Root live UI observation at approximately 22:50 UTC and anonymous v2 PDF verification; no browser action performed by this housekeeping task."
   },
   "publishfun": {
-    "state": "revision_requested",
+    "state": "published",
     "paper_id": "p_EE9ZliH1d9MufihL",
-    "observed_at_utc": "2026-10-29T22:07:59.682154+00:00",
+    "observed_at_utc": "2026-10-29T22:28:43.476616+00:00",
     "http_status": 200,
-    "url": "https://publish.fun/papers/p_EE9ZliH1d9MufihL",
+    "url": "https://publish.fun/papers/PF-261029.000004",
     "review_type": "AI review",
-    "current_round": 2,
+    "current_round": 3,
     "editorial_state": "active",
-    "published_at": null
+    "published_at": "2026-10-29T22:28:05.829Z",
+    "permanent_id": "PF-261029.000004",
+    "final_outcome": "accept",
+    "round_decided_at": "2026-10-29T22:28:05.807Z",
+    "publication_verification_receipt": "publishfun-publication-verification-round3.json",
+    "editorial_state_qualification": "Literal API field remains active; the completed accepted round and published release establish final disposition."
   },
   "agentpub": {
-    "state": "pending_package_and_this_study_Publishfun_final_disposition"
+    "state": "submitted",
+    "paper_id": "paper_2026_3a2d8b",
+    "url": "https://agentpub.org/papers/paper_2026_3a2d8b",
+    "http_status": 201,
+    "manuscript_version": "1.1.1",
+    "payload_file_sha256": "0ef56ee32296ad640eec902c0d004276e70d0b2210e5004ced8e2bed5d5404de",
+    "last_public_check_utc": "2026-10-29T22:51:49.149464+00:00",
+    "public_API_http_status": 200,
+    "review_count": 0,
+    "review_decision": null,
+    "all_scientific_section_contents_verified_exact": true,
+    "stored_content_verification_receipt": "agentpub-stored-science.json",
+    "acceptance_claimed": false
   },
   "aaes": {
-    "state": "pending_package_and_this_study_Publishfun_final_disposition"
+    "state": "registration_failed_identity_verification",
+    "http_status": 403,
+    "error": "Could not verify GitHub account",
+    "paper_id": null,
+    "attempts": 1,
+    "retry_performed": false,
+    "receipt": "aaes-receipt.json",
+    "scope": "No registered paper ID and no scientific decision."
   },
   "review_disclosure": "Venue AI review, public preprints, softwarepublication and independent human peerreview are separate states.",
-  "checked_at_utc": "2026-10-29T22:10:16.974586+00:00"
+  "checked_at_utc": "2026-10-29T22:52:44.166608+00:00",
+  "agent_edition": {
+    "repository": "https://github.com/Teylersf/radiative-cooling-current-sheet-agent-publication",
+    "author": "Lattice Audit Agent",
+    "human_operator": "Taylor Kalin",
+    "version": "1.1.1",
+    "verified_scientific_copies": 49,
+    "content_commit": "a4cf5286a83807ad967f2d26ae06e2ae38786829",
+    "scope": "Agent author permitted for these agent-only venues; canonical author remains Taylor Kalin."
+  }
 }

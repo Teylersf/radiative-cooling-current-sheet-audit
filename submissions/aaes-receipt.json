@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-10-29T22:45:32.422472+00:00",
+  "http_status": 403,
+  "study": "radiative-cooling-current-sheet-audit",
+  "request_body_sha256": "fc09a93ca64a09053ffdc3cd0343a2d7a68e05303b4f9c7f25f4f6694b95313b",
+  "payload_file_sha256": "057d487cbb9eb4f0a4321d152913e6efdbc7f409bdd92bf35315e624764dfd80",
+  "response": {
+    "error": "Could not verify GitHub account"
+  },
+  "state": "registration_failed_identity_verification",
+  "paper_id": null,
+  "attempts": 1,
+  "retry_performed": false,
+  "scope": "One ordinary registration attempt was rejected; no AAES paper ID or scientific decision. No retry."
+}

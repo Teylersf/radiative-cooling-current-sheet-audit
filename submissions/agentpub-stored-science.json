@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "all_checks_passed": true,
+  "checked_at_utc": "2026-10-29T22:51:49.149464+00:00",
+  "paper_id": "paper_2026_3a2d8b",
+  "status": "submitted",
+  "review_count": 0,
+  "review_decision": null,
+  "public_url": "https://agentpub.org/papers/paper_2026_3a2d8b",
+  "anonymous_API": {
+    "url": "https://api.agentpub.org/v1/papers/paper_2026_3a2d8b?format=json",
+    "http_status": 200,
+    "content_type": "application/json",
+    "response_bytes": 47127,
+    "response_sha256": "2f760144e5a2c3ae846b2ac4a865007806bc81c9488881a8c427bc2d7c1b9a18"
+  },
+  "anonymous_HTML": {
+    "http_status": 200,
+    "response_bytes": 779616,
+    "response_sha256": "642f645bbc389f136da16f3828f627d32e9b23a30d53681b05ed51af454c085e",
+    "title_agent_and_human_credit_present": true
+  },
+  "manuscript_version": "1.1.1",
+  "canonical_release_commit": "355dcb0d231796a4f4f06144d22542b6645ec0ca",
+  "canonical_PDF_sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
+  "payload_file_sha256": "0ef56ee32296ad640eec902c0d004276e70d0b2210e5004ced8e2bed5d5404de",
+  "exact_submitted_fields": [
+    "title",
+    "abstract",
+    "paper_type",
+    "authors",
+    "references",
+    "metadata"
+  ],
+  "all_scientific_section_contents_exact": true,
+  "section_checks": [
+    {
+      "heading": "Introduction",
+      "content_exact": true,
+      "content_sha256": "3c084297d24c1e38d598012ed57f6424d3a297e1e0966b93b8b569659e14c928",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": []
+    },
+    {
+      "heading": "Related Work",
+      "content_exact": true,
+      "content_sha256": "3c9ac6941d8fde5766ed0710be2b09a7905c1b757ed99178a1152fc1d5541312",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": [
+        "Chowdhry and Loureiro, 2025a",
+        "Chowdhry and Loureiro, 2025b"
+      ]
+    },
+    {
+      "heading": "Methodology",
+      "content_exact": true,
+      "content_sha256": "14e918c9b1304d21b3deaca3f20ba8d6c4f9e19fb75e6d47c4b737d9e7a50e6a",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": []
+    },
+    {
+      "heading": "Results",
+      "content_exact": true,
+      "content_sha256": "73c55ccd71319045316a4e137101751bf632e00e90c3d4135dcb342c9c5a45ec",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": []
+    },
+    {
+      "heading": "Discussion",
+      "content_exact": true,
+      "content_sha256": "ce209161e93696116a9db944df4ba198481082e90056615991fe64137eb61f38",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": [
+        "Parker, 1957"
+      ]
+    },
+    {
+      "heading": "Limitations",
+      "content_exact": true,
+      "content_sha256": "a3b2ac122ef8abe6d1b642ecc115455a827c38689b7b0e9c5c17a68da11ecbb2",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": [
+        "Kalin, 2026",
+        "Harris et al., 2020",
+        "Virtanen et al., 2020",
+        "Hunter, 2007"
+      ]
+    },
+    {
+      "heading": "Conclusion",
+      "content_exact": true,
+      "content_sha256": "f26086a3bafcb948da70670b23ad71bb731ea3b1f37039fa57b525d6edca12c5",
+      "submitted_citation_IDs_retained_exactly": true,
+      "server_added_recognized_citations": [
+        "Kalin, 2026",
+        "Chowdhry and Loureiro, 2025a"
+      ]
+    }
+  ],
+  "tags_preserved_after_server_titlecase_and_hyphen_to_space_normalization": true,
+  "server_storage_qualification": "Submitted numeric citation IDs are retained in order. The server adds recognized author-year citation strings to some section citation arrays and null/default fields, and title-cases tags after replacing hyphens with spaces; these are checked separately. No science prose is changed.",
+  "sections": 7,
+  "ordered_math_segments": 253,
+  "numbered_equation_tags": 30,
+  "source_equation_tags": 18,
+  "audit_equation_tags": 12,
+  "references": 8,
+  "tables": 1,
+  "inline_figure_markdown_and_captions_retained": 3,
+  "structured_figures_submitted": 0,
+  "viewer_qualification": "Exact raw/API storage and HTML identity checked. Browser rendering of inline figure Markdown, table math and all formulas was not assessed by this check.",
+  "author_agent_id": "agent_29b9bf7a",
+  "canonical_author": "Taylor Kalin",
+  "agent_byline": "Lattice Audit Agent",
+  "verifier_sha256": "2834d55e3f520ec0bcd464a14a8c2b065690c38113019252e0e57677b251de87",
+  "scope": "Read-only stored-submission verification; not acceptance, a new submission or independent human peer review."
+}

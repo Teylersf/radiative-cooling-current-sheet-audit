@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T22:27:38.424624+00:00",
+  "repository": {
+    "url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit",
+    "private": false,
+    "visibility": "public"
+  },
+  "release": {
+    "url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/tag/v1.1.1",
+    "tag": "v1.1.1",
+    "target_commitish": "355dcb0d231796a4f4f06144d22542b6645ec0ca",
+    "resolved_commit": "355dcb0d231796a4f4f06144d22542b6645ec0ca",
+    "remote_tag_commit_verified": true,
+    "published_at": "2026-10-29T22:27:35Z",
+    "draft": false
+  },
+  "release_PDF": {
+    "url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/releases/download/v1.1.1/main.pdf",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "bytes": 571421,
+    "sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
+    "final_host": "release-assets.githubusercontent.com",
+    "checked_at_utc": "2026-10-29T22:27:39.290061+00:00",
+    "matches_frozen_local_bytes": true
+  },
+  "pinned_manuscript": {
+    "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/355dcb0d231796a4f4f06144d22542b6645ec0ca/paper/manuscript.md",
+    "http_status": 200,
+    "content_type": "text/plain",
+    "bytes": 38737,
+    "sha256": "05dbb07aac6b8354a6bca590cdcac244e1c8d8730eea76ed5c4aa1cdd589f2f3",
+    "final_host": "raw.githubusercontent.com",
+    "checked_at_utc": "2026-10-29T22:27:39.548175+00:00",
+    "matches_frozen_local_bytes": true
+  },
+  "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "Publish_fun_figure_URLs": [
+    {
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/figures/pressure-and-profile.png",
+      "http_status": 200,
+      "content_type": "image/png",
+      "bytes": 163792,
+      "sha256": "15a947085f9bbcd2968e322951b20bfce15e1f9b195a1f58e63b9305a58cb569",
+      "final_host": "raw.githubusercontent.com",
+      "checked_at_utc": "2026-10-29T22:27:39.883385+00:00",
+      "matches_frozen_local_bytes": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/figures/cumulative-integral.png",
+      "http_status": 200,
+      "content_type": "image/png",
+      "bytes": 180347,
+      "sha256": "b00de0c22080139a44461df62a000dc8295fbbdc61220f0e33696bdbf85aca54",
+      "final_host": "raw.githubusercontent.com",
+      "checked_at_utc": "2026-10-29T22:27:40.366404+00:00",
+      "matches_frozen_local_bytes": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Teylersf/radiative-cooling-current-sheet-audit/8a4e64cc032cb0c57bb621b200903b0c0f0706c2/figures/steady-branch-domain.png",
+      "http_status": 200,
+      "content_type": "image/png",
+      "bytes": 119930,
+      "sha256": "ad588f133d08f72a0a218d8df159d1b4e1b50d31ea2801f6000042f5e25c121f",
+      "final_host": "raw.githubusercontent.com",
+      "checked_at_utc": "2026-10-29T22:27:40.686814+00:00",
+      "matches_frozen_local_bytes": true
+    }
+  ]
+}

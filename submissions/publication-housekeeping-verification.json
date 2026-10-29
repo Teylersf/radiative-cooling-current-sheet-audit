@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "all_checks_passed": true,
+  "checked_at_utc": "2026-10-29T22:53:46.236518+00:00",
+  "manuscript_version": "1.1.1",
+  "canonical_release_commit": "355dcb0d231796a4f4f06144d22542b6645ec0ca",
+  "canonical_release_tag_unchanged": true,
+  "computational_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "computational_tree": "667f0fbee9a51bd99f7bbc0dd21b1c22b19efb5a",
+  "computational_commit_tree_unchanged": true,
+  "agent_scientific_copies_checked": 49,
+  "all_49_copy_bytes_and_source_revision_blobs_unchanged": true,
+  "protected_science_artifacts_unchanged": [
+    {
+      "repo": "canonical",
+      "path": "paper/manuscript.md",
+      "sha256": "05dbb07aac6b8354a6bca590cdcac244e1c8d8730eea76ed5c4aa1cdd589f2f3"
+    },
+    {
+      "repo": "canonical",
+      "path": "paper/main.pdf",
+      "sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff"
+    },
+    {
+      "repo": "agent",
+      "path": "paper.md",
+      "sha256": "245e1329e40a04830a542e59213722e16741a87af914f90cd9b35e4246e5198b"
+    },
+    {
+      "repo": "agent",
+      "path": "agent-paper.md",
+      "sha256": "245e1329e40a04830a542e59213722e16741a87af914f90cd9b35e4246e5198b"
+    },
+    {
+      "repo": "agent",
+      "path": "metadata.json",
+      "sha256": "0448aa91291cc0b1e5727129c8ec70be2c9aa061481a077bc510c916876ad4b2"
+    },
+    {
+      "repo": "agent",
+      "path": "reproduction/adapter-checks.json",
+      "sha256": "e5216d90ef18cb31516e1018862cc38659fdb6a5e83c784a7b115093a30f1379"
+    },
+    {
+      "repo": "agent",
+      "path": "reproduction/prepare_packages.py",
+      "sha256": "04f03bea93e8a2cfa3d04bd2f6e97e7b4a990c790ebedfb7485801de8f16ae5e"
+    }
+  ],
+  "AgentPub_action": "Anonymous read-only API and HTML GETs only; no resubmission/revision/review interaction.",
+  "AAES_action": "No service call or retry; original single403 outcome recorded.",
+  "Publishfun_action": "Anonymous public page GET and existing accepted-round receipt verification only.",
+  "Aira_action": "No browser/service call; root verified public-v2 proof and pending-v3 observation retained.",
+  "scope": "Narrow publication status/proof housekeeping only, no science, payload, pinned release, code or archive modification."
+}
