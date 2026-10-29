@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "Prescribed scalar EOS, printed asymptotic forces and algebraic SP balances; no full MHD or source trajectory reproduction.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2"
+  },
+  "producer_sha256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499",
+  "isochoric": {
+    "P0": 1,
+    "b": 0.5,
+    "kappa": 1,
+    "printed_A": 0.25,
+    "correct_initial_derivative": -1,
+    "printed_initial_derivative": 0,
+    "max_correct_residual": 0.0,
+    "pressure_at_time1": {
+      "correct": 0.25,
+      "printed": 0.75
+    }
+  },
+  "positive_profile": {
+    "time": 0.5,
+    "min_pressure": 0.11023883182942967,
+    "min_gradient_multiplier": 0.5704632204124422,
+    "max_gradient_multiplier": 0.75,
+    "center_stays_maximum": true,
+    "exact_parabolic_rescaling": false
+  },
+  "cumulative_histories": [
+    {
+      "alpha": 0.6666666666666666,
+      "Ic": 1.7999999999999998,
+      "tail_exponent": 0.5555555555555556,
+      "force_ratio_exponent": 0.2222222222222222
+    },
+    {
+      "alpha": 1,
+      "Ic": 2.9999999999999996,
+      "tail_exponent": 0.33333333333333337,
+      "force_ratio_exponent": 0.3333333333333333
+    }
+  ],
+  "steady_branch_cases": [
+    {
+      "beta": 1,
+      "calR": 100,
+      "S": 100000000.0,
+      "compression": 2,
+      "length_over_system": 0.001549193338482967,
+      "rate_enhancement_over_incompressible_SP": 35.93041119630842,
+      "vin_over_VA": 0.003593041119630842,
+      "delta_over_L": 0.0017965205598154208,
+      "layer_fits_system": true,
+      "enhanced_relative_to_baseline": true,
+      "thin_at_threshold_point1": true,
+      "subAlfvenic": true,
+      "continuity_relative_residual": 1.5217121045834016e-16,
+      "ohms_law_relative_residual": 0.0
+    },
+    {
+      "beta": 1e-06,
+      "calR": 100,
+      "S": 100000000.0,
+      "compression": 1.000001,
+      "length_over_system": 3098.3835785823558,
+      "rate_enhancement_over_incompressible_SP": 0.017965223563359806,
+      "vin_over_VA": 1.7965223563359806e-06,
+      "delta_over_L": 1.7965205598154208e-06,
+      "layer_fits_system": false,
+      "enhanced_relative_to_baseline": false,
+      "thin_at_threshold_point1": true,
+      "subAlfvenic": true,
+      "continuity_relative_residual": 0.0,
+      "ohms_law_relative_residual": 0.0
+    },
+    {
+      "beta": 1,
+      "calR": 10000000000.0,
+      "S": 100000000.0,
+      "compression": 2,
+      "length_over_system": 1.549193338482967e-11,
+      "rate_enhancement_over_incompressible_SP": 359304.1119630842,
+      "vin_over_VA": 35.93041119630842,
+      "delta_over_L": 17.96520559815421,
+      "layer_fits_system": true,
+      "enhanced_relative_to_baseline": true,
+      "thin_at_threshold_point1": false,
+      "subAlfvenic": false,
+      "continuity_relative_residual": 0.0,
+      "ohms_law_relative_residual": 0.0
+    },
+    {
+      "beta": 10,
+      "calR": 100,
+      "S": 100000000.0,
+      "compression": 11,
+      "length_over_system": 2.816715160878122e-05,
+      "rate_enhancement_over_incompressible_SP": 624.9206515571246,
+      "vin_over_VA": 0.06249206515571246,
+      "delta_over_L": 0.005681096832337495,
+      "layer_fits_system": true,
+      "enhanced_relative_to_baseline": true,
+      "thin_at_threshold_point1": true,
+      "subAlfvenic": true,
+      "continuity_relative_residual": 3.609057145148925e-16,
+      "ohms_law_relative_residual": 1.110363993671433e-16
+    }
+  ],
+  "thinness_plot_threshold": 0.1,
+  "independence": "Separate high-precision verifiers neither import this producer nor use its CSV outputs as their mathematical reference."
+}

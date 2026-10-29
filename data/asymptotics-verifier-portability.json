@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T21:15:38.249439+00:00",
+  "scope": "Path-only offline adaptation and an added optimization guard; all original numerical logic, precision and tolerances preserved.",
+  "author": "Taylor Kalin",
+  "original_script": {
+    "filename": "verify_asymptotic_limits.py",
+    "sha256": "e40ccd9965bf0d8b7347c201e90b07de70690c0f303e63d33fb8889887135737",
+    "bytes": 9904
+  },
+  "adapted_script": {
+    "path": "experiments/verify_asymptotics_independently.py",
+    "sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971",
+    "bytes": 10113,
+    "LF_only": true
+  },
+  "original_run": {
+    "path": "data/independent-asymptotics-original-run.json",
+    "original_filename": "asymptotic-checks.json",
+    "sha256": "fadbbed52575486ecc6e002574bb0c2794a53dc9d0ae6b970668ccd64f7d610c",
+    "bytes": 35838,
+    "exact_copy_of_retained_scratch_original": true,
+    "original_producer_sha256": "e40ccd9965bf0d8b7347c201e90b07de70690c0f303e63d33fb8889887135737"
+  },
+  "adapted_run": {
+    "path": "results/independent-asymptotics.json",
+    "sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a",
+    "bytes": 35838,
+    "producer_sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971",
+    "all_checks_passed": true,
+    "all_result_fields_except_self_producer_SHA_exactly_equal_to_original": true
+  },
+  "exact_adaptations": [
+    "Replace scratch-directory HERE with repository ROOT derived from this script location.",
+    "Write the generated result to results/independent-asymptotics.json and create that output directory if needed.",
+    "Reject optimized Python at module start so assertions cannot be silently disabled."
+  ],
+  "source_reversal_matches_original_text_exactly": true,
+  "numerical_logic_or_tolerances_changed": false,
+  "runtime": {
+    "implementation": "CPython",
+    "python_version": "3.13.7",
+    "actual_interpreter_requested_by_task": "Python313",
+    "command": "python -X utf8 experiments/verify_asymptotics_independently.py",
+    "dependencies": "Python standard library only; Decimal precision150 digits.",
+    "returncode": 0
+  },
+  "optimization_guard": {
+    "probe": "python -O -X utf8 experiments/verify_asymptotics_independently.py",
+    "returncode": 1,
+    "expected_explicit_rejection_observed": true,
+    "existing_result_bytes_unchanged": true
+  },
+  "counts": {
+    "cumulative_integral_cases": 12,
+    "controlled_scalar_cases": 3,
+    "scalar_quadrature_points": 24
+  },
+  "source_document_provenance": {
+    "doi": "10.1017/S0022377825100949",
+    "locators": {
+      "journal_doi": "10.1017/S0022377825100949",
+      "cumulative_integral": "Eq.(2.29), p.7; printed ODE Eq.(2.31), p.7",
+      "weak_and_strong_asymptotics": "Eqs.(3.2)\u2013(3.12), pp.11\u201313; Fig.4, p.14",
+      "proposed_equal_order_threshold": "Eq.(3.13), p.15",
+      "leading_coefficient": "Appendix B, Eqs.(B11)\u2013(B14), p.23"
+    },
+    "PDF_required_at_runtime": false,
+    "PDF_read_or_rehashed_by_verifier": false,
+    "qualification": "Source equation locators are historical documentary provenance; this offline numerical run does not re-verify any original PDF bytes."
+  },
+  "new_MHD_or_PIC_simulations": 0,
+  "external_network_access_by_verifier": false,
+  "all_checks_passed": true
+}

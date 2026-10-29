@@ -1,0 +1,448 @@
+{
+  "status": "pass",
+  "schema_version": 1,
+  "scope": "Independent scalar EOS integration and closure/positivity controls for the stated formulas; prescribed positive Jacobians, not a full MHD or reconnection simulation.",
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.2.1",
+    "scipy": "1.17.1",
+    "mpmath": "1.3.0"
+  },
+  "method": {
+    "direct_ODE": "SciPy DOP853 pressure equation, not a transformed closed-form ODE",
+    "rtol": 2e-12,
+    "atol": 2e-14,
+    "max_step": 0.025,
+    "reference": "mpmath65digit quadrature of J^q, followed by Bernoulli/exponential formula",
+    "time_grid_points": 17,
+    "final_time": 0.4,
+    "random_generator": "NumPy PCG64 seed250813081"
+  },
+  "sources": [
+    {
+      "file": "journal-vor-S0022377825100949.pdf",
+      "sha256": "1e47de8f1bbdb554c26efe029b13127cdbf4464fe6599721b64129f86b22150e",
+      "verification_semantics": "recorded provenance; source bytes not read or rehashed",
+      "record_source": "data/source-editions.json",
+      "matching_metadata_fields": [
+        "$.journal.pdf_sha256"
+      ]
+    },
+    {
+      "file": "official-arxiv-2508.13081v1.pdf",
+      "sha256": "49dd1f97967345a7c22825158758ab1ed49529abd27c717ee2bdbc6ef7c40c0c",
+      "verification_semantics": "recorded provenance; source bytes not read or rehashed",
+      "record_source": "data/source-editions.json",
+      "matching_metadata_fields": [
+        "$.supplied_and_arxiv.supplied_sha256",
+        "$.supplied_and_arxiv.official_versioned_pdf_sha256"
+      ]
+    },
+    {
+      "file": "arxiv-source-v1/paper.tex",
+      "sha256": "46af1a05cfd0d1842d53d4dd28da0987f6875072c325c2e6255d4f75474efe7c",
+      "verification_semantics": "recorded provenance; source bytes not read or rehashed",
+      "record_source": "data/source-editions.json",
+      "matching_metadata_fields": [
+        "$.arxiv_source.source_tex_sha256"
+      ]
+    }
+  ],
+  "source_provenance": {
+    "source_bytes_rehashed": false,
+    "metadata_file": "data/source-editions.json",
+    "metadata_sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331",
+    "fallback_source_records_used": 0,
+    "note": "Source hashes identify previously verified editions; this offline numerical run makes no new assertion about unavailable PDF or TeX bytes."
+  },
+  "verifier_sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b",
+  "direct_integrations": 318,
+  "ODE_function_evaluations": 80628,
+  "positive_branch_minimum_pressure": 0.27056996418399765,
+  "reference_controls_minimum_closed_form_branch_parameter": 0.703690250308893,
+  "EOS_reference_controls": [
+    {
+      "profile": "isochoric",
+      "b": 0,
+      "case_count": 4,
+      "maximum_absolute_error": 2.220446049250313e-15,
+      "maximum_relative_error": 9.753857047943813e-16
+    },
+    {
+      "profile": "isochoric",
+      "b": 0.25,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.8456219670223397e-16
+    },
+    {
+      "profile": "isochoric",
+      "b": 0.5,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.0361776197140255e-16
+    },
+    {
+      "profile": "isochoric",
+      "b": 0.75,
+      "case_count": 4,
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "maximum_relative_error": 6.10333679072991e-16
+    },
+    {
+      "profile": "isochoric",
+      "b": 1,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 4.452727181376448e-16
+    },
+    {
+      "profile": "compression",
+      "b": 0,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 3.713464255425154e-16
+    },
+    {
+      "profile": "compression",
+      "b": 0.25,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 3.7080707210012733e-16
+    },
+    {
+      "profile": "compression",
+      "b": 0.5,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 3.8461698928689e-16
+    },
+    {
+      "profile": "compression",
+      "b": 0.75,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.5466796296327866e-16
+    },
+    {
+      "profile": "compression",
+      "b": 1,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 3.2884728473931416e-16
+    },
+    {
+      "profile": "expansion",
+      "b": 0,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.459751137229696e-16
+    },
+    {
+      "profile": "expansion",
+      "b": 0.25,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 5.109275693307371e-16
+    },
+    {
+      "profile": "expansion",
+      "b": 0.5,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 3.3132989377397405e-16
+    },
+    {
+      "profile": "expansion",
+      "b": 0.75,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.935488289100558e-16
+    },
+    {
+      "profile": "expansion",
+      "b": 1,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 5.207310306448715e-16
+    },
+    {
+      "profile": "changing_compression_rate",
+      "b": 0,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 3.7063158333109206e-16
+    },
+    {
+      "profile": "changing_compression_rate",
+      "b": 0.25,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 3.590681787348409e-16
+    },
+    {
+      "profile": "changing_compression_rate",
+      "b": 0.5,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.6279428728330755e-16
+    },
+    {
+      "profile": "changing_compression_rate",
+      "b": 0.75,
+      "case_count": 4,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_relative_error": 2.7121620317256816e-16
+    },
+    {
+      "profile": "changing_compression_rate",
+      "b": 1,
+      "case_count": 4,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_relative_error": 3.676635814388289e-16
+    }
+  ],
+  "maximum_ODE_vs_reference_relative_error": 9.753857047943813e-16,
+  "printed_C1_C2_initial_derivative_controls": [
+    {
+      "b": 0.25,
+      "finite_C2_controls": 48,
+      "minimum_initial_derivative_error": 0.06079604290536322,
+      "maximum_initial_derivative_error": 0.2662792147069391
+    },
+    {
+      "b": 0.5,
+      "finite_C2_controls": 48,
+      "minimum_initial_derivative_error": 0.0628598440978022,
+      "maximum_initial_derivative_error": 0.30146522187476277
+    },
+    {
+      "b": 0.75,
+      "finite_C2_controls": 48,
+      "minimum_initial_derivative_error": 0.06499370372099367,
+      "maximum_initial_derivative_error": 0.3413006910810588
+    }
+  ],
+  "printed_full_form_positive_time_residual_controls": [
+    {
+      "b": 0.25,
+      "C2_over_P0": 0.1,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.17675340310345347,
+      "maximum_pressure_difference_from_correct_solution": 0.07017015036025832
+    },
+    {
+      "b": 0.25,
+      "C2_over_P0": 1,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.14590989537134127,
+      "maximum_pressure_difference_from_correct_solution": 0.05835407750900883
+    },
+    {
+      "b": 0.25,
+      "C2_over_P0": 3,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.10559280142351285,
+      "maximum_pressure_difference_from_correct_solution": 0.03209613783956552
+    },
+    {
+      "b": 0.5,
+      "C2_over_P0": 0.1,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.2035388926818751,
+      "maximum_pressure_difference_from_correct_solution": 0.0796244725980953
+    },
+    {
+      "b": 0.5,
+      "C2_over_P0": 1,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.2012524780669094,
+      "maximum_pressure_difference_from_correct_solution": 0.07917747608247702
+    },
+    {
+      "b": 0.5,
+      "C2_over_P0": 3,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.19617154609036688,
+      "maximum_pressure_difference_from_correct_solution": 0.0781841504922142
+    },
+    {
+      "b": 0.75,
+      "C2_over_P0": 0.1,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.2292012910809657,
+      "maximum_pressure_difference_from_correct_solution": 0.0886861672654804
+    },
+    {
+      "b": 0.75,
+      "C2_over_P0": 1,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.22920121265110482,
+      "maximum_pressure_difference_from_correct_solution": 0.08868615960857036
+    },
+    {
+      "b": 0.75,
+      "C2_over_P0": 3,
+      "positive_times_checked": 3,
+      "maximum_absolute_original_EOS_residual": 0.22920103836252503,
+      "maximum_pressure_difference_from_correct_solution": 0.0886861425932147
+    }
+  ],
+  "printed_b1_status": "undefined at b=1; repaired exponential solution independently matches direct ODE",
+  "b0_calibrated_C2_positive_control": {
+    "C2_required": "rho0^a/(gamma-1) under the printed tilde convention",
+    "maximum_absolute_error": 8.881784197001252e-16,
+    "not_arbitrary": true
+  },
+  "b_to_one_limit_controls": [
+    {
+      "one_minus_b": 0.001,
+      "absolute_difference_from_b1": 7.880667657325789e-05
+    },
+    {
+      "one_minus_b": 1e-06,
+      "absolute_difference_from_b1": 7.882166308339107e-08
+    },
+    {
+      "one_minus_b": 1e-09,
+      "absolute_difference_from_b1": 7.882167807051053e-11
+    }
+  ],
+  "pressure_order_controls": {
+    "independent_profile_exponent_groups": 20,
+    "initial_pressures_per_group": 11,
+    "all_ordered": true,
+    "minimum_adjacent_pressure_difference": 0.26377078871939896
+  },
+  "spatial_gradient_controls": [
+    {
+      "b": 0,
+      "x0": 0.25,
+      "y0": 0,
+      "gradient_from_direct_ODE_solutions": -1.0905331080901526,
+      "gradient_from_mp_differentiation": -1.0905331080903427,
+      "absolute_error": 1.900701818158268e-13,
+      "pressure_acceleration_over_x0": 4.669075226588931
+    },
+    {
+      "b": 0,
+      "x0": 0.25,
+      "y0": 0.4,
+      "gradient_from_direct_ODE_solutions": -1.0905331080901526,
+      "gradient_from_mp_differentiation": -1.0905331080903427,
+      "absolute_error": 1.900701818158268e-13,
+      "pressure_acceleration_over_x0": 4.669075226588931
+    },
+    {
+      "b": 0,
+      "x0": 0.25,
+      "y0": 0.8,
+      "gradient_from_direct_ODE_solutions": -1.0905331080879321,
+      "gradient_from_mp_differentiation": -1.0905331080903427,
+      "absolute_error": 2.41051623106614e-12,
+      "pressure_acceleration_over_x0": 4.669075226579424
+    },
+    {
+      "b": 0.5,
+      "x0": 0.25,
+      "y0": 0,
+      "gradient_from_direct_ODE_solutions": -1.0225264878283014,
+      "gradient_from_mp_differentiation": -1.0225264880111244,
+      "absolute_error": 1.8282309000028363e-10,
+      "pressure_acceleration_over_x0": 4.37790751828823
+    },
+    {
+      "b": 0.5,
+      "x0": 0.25,
+      "y0": 0.4,
+      "gradient_from_direct_ODE_solutions": -1.0195316539851618,
+      "gradient_from_mp_differentiation": -1.019531654188762,
+      "absolute_error": 2.0360024777232866e-10,
+      "pressure_acceleration_over_x0": 4.365085253286811
+    },
+    {
+      "b": 0.5,
+      "x0": 0.25,
+      "y0": 0.8,
+      "gradient_from_direct_ODE_solutions": -1.0074297898565732,
+      "gradient_from_mp_differentiation": -1.0074297901921243,
+      "absolute_error": 3.355511424274482e-10,
+      "pressure_acceleration_over_x0": 4.313271591162151
+    },
+    {
+      "b": 1,
+      "x0": 0.25,
+      "y0": 0,
+      "gradient_from_direct_ODE_solutions": -0.8507277547664671,
+      "gradient_from_mp_differentiation": -0.8507277547683159,
+      "absolute_error": 1.8487433806058107e-12,
+      "pressure_acceleration_over_x0": 3.6423579026482584
+    },
+    {
+      "b": 1,
+      "x0": 0.25,
+      "y0": 0.4,
+      "gradient_from_direct_ODE_solutions": -0.8507277547620262,
+      "gradient_from_mp_differentiation": -0.8507277547683159,
+      "absolute_error": 6.289635479106437e-12,
+      "pressure_acceleration_over_x0": 3.642357902629245
+    },
+    {
+      "b": 1,
+      "x0": 0.25,
+      "y0": 0.8,
+      "gradient_from_direct_ODE_solutions": -0.8507277547620262,
+      "gradient_from_mp_differentiation": -0.8507277547683159,
+      "absolute_error": 6.289635479106437e-12,
+      "pressure_acceleration_over_x0": 3.642357902629245
+    }
+  ],
+  "force_coefficient_spreads": [
+    {
+      "b": 0,
+      "force_coefficient_location_spread": 9.50706180447014e-12,
+      "affine_pressure_control": "spatially_constant_special_case"
+    },
+    {
+      "b": 0.5,
+      "force_coefficient_location_spread": 0.06463592712607902,
+      "affine_pressure_control": "fails_exact_global_closure"
+    },
+    {
+      "b": 1,
+      "force_coefficient_location_spread": 1.901323543052058e-11,
+      "affine_pressure_control": "spatially_constant_special_case"
+    }
+  ],
+  "outflow_positive_pressure_controls": {
+    "states": 4096,
+    "assumptions": "0<xi<eta,P0X>0,theta>=0, printed finalODE",
+    "minimum_acceleration": 0.26136772176869405,
+    "all_strictly_positive": true,
+    "negative_pressure_is_not_sufficient_by_itself": [
+      {
+        "xi": 0.5,
+        "eta": 1,
+        "P0X": 1,
+        "theta": -0.1,
+        "central_pressure": -0.3174802103936399,
+        "outflow_acceleration": 1.34125989480318
+      },
+      {
+        "xi": 0.5,
+        "eta": 1,
+        "P0X": 1,
+        "theta": -2.0,
+        "central_pressure": -6.3496042078727974,
+        "outflow_acceleration": -1.6748021039363987
+      }
+    ]
+  },
+  "limits": [
+    "Positive thermodynamic branch only; no square-root continuation through zero pressure.",
+    "Pressure ordering assumes spatially uniform density and common J history.",
+    "Failure of exact affine closure does not preclude a declared local approximation or a different positive-pressure model.",
+    "Outflow implication is conditional on the displayed finalODE and xi<eta, not all possible cooled plasmas.",
+    "No hidden author-code identity, source numerical trajectory, physical spectrum, MHD dynamics, or full collapse times are reproduced."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T20:54:18.313342+00:00",
+  "scope": "Bounded read-only primary metadata, correction-notice and code/data-link context check before scientific audit; no mathematical verdict.",
+  "target": {
+    "arxiv": "2508.13081v1",
+    "journal_doi": "10.1017/S0022377825100949",
+    "official_article_url": "https://www.cambridge.org/core/journals/journal-of-plasma-physics/article/current-sheet-formation-under-radiative-cooling/25F7006FAF380BAA0F24E9DE86FFA274"
+  },
+  "crossref": {
+    "api_url": "https://api.crossref.org/works/10.1017/S0022377825100949",
+    "http_status": 200,
+    "response_bytes": 11905,
+    "response_sha256": "24cc8e056d49d5f47c1d1c71aa262469ea52d5eae591f23a260e44f75066195e",
+    "metadata": {
+      "DOI": "10.1017/s0022377825100949",
+      "title": [
+        "Current sheet formation under radiative cooling"
+      ],
+      "publisher": "Cambridge University Press (CUP)",
+      "container-title": [
+        "Journal of Plasma Physics"
+      ],
+      "volume": "91",
+      "issue": "6",
+      "article-number": "E148",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            7
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      },
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            7
+          ]
+        ],
+        "date-time": "2025-11-07T07:01:05Z",
+        "timestamp": 1762498865000
+      },
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            7
+          ]
+        ],
+        "date-time": "2025-11-07T07:01:07Z",
+        "timestamp": 1762498867000
+      },
+      "relation": {},
+      "update-to": null,
+      "updated-by": null,
+      "update-policy": "https://doi.org/10.1017/policypage",
+      "resource": {
+        "primary": {
+          "URL": "https://www.cambridge.org/core/product/identifier/S0022377825100949/type/journal_article"
+        }
+      },
+      "authors": [
+        {
+          "given": "Simran",
+          "family": "Chowdhry",
+          "ORCID": "https://orcid.org/0009-0009-1806-0953"
+        },
+        {
+          "given": "Nuno F.",
+          "family": "Loureiro",
+          "ORCID": "https://orcid.org/0000-0001-9755-6563"
+        }
+      ]
+    },
+    "relation_object_empty": true,
+    "update_to_present": false,
+    "updated_by_present": false,
+    "interpretation": "No update/correction relation is exposed in this work record. The update-policy URL is a general publisher policy, not a paper-specific correction notice."
+  },
+  "publisher_page_inspection": {
+    "url": "https://www.cambridge.org/core/journals/journal-of-plasma-physics/article/current-sheet-formation-under-radiative-cooling/25F7006FAF380BAA0F24E9DE86FFA274",
+    "readable_official_HTML_observed": true,
+    "title": "Current sheet formation under radiative cooling",
+    "online_publication": "2025-11-07",
+    "journal": "Journal of Plasma Physics",
+    "volume": "91",
+    "issue": "6",
+    "article_number": "E148",
+    "article_contents_include": [
+      "Abstract",
+      "Introduction",
+      "Method",
+      "Results and analysis",
+      "Modified Sweet\u2013Parker model",
+      "Conclusions",
+      "Declaration of interests",
+      "Footnotes",
+      "References"
+    ],
+    "article_specific_correction_notice_identified": false,
+    "explicit_data_availability_heading_identified": false,
+    "explicit_code_availability_heading_identified": false,
+    "actual_code_or_data_repository_links_identified": [],
+    "terms_checked": [
+      "Data availability",
+      "code",
+      "github",
+      "zenodo",
+      "OSF",
+      "Corrigendum",
+      "Erratum"
+    ],
+    "generic_site_navigation_excluded": [
+      "Publishing supplementary material",
+      "Data and supporting evidence for journals",
+      "Corrections, retractions and removals for journals"
+    ],
+    "qualification": "Findings concern the inspected readable official HTML. This does not establish that the authors have no code/data or that no deposit can exist elsewhere."
+  },
+  "bounded_correction_search": {
+    "queries": [
+      "site:cambridge.org \"Current sheet formation under radiative cooling\" correction",
+      "\"10.1017/S0022377825100949\" erratum OR correction OR corrigendum",
+      "site:cambridge.org \"Current sheet formation under radiative cooling\" \"corrigendum\"",
+      "site:cambridge.org \"Chowdhry\" \"radiative cooling\" \"erratum\""
+    ],
+    "paper_specific_erratum_correction_or_corrigendum_identified": false,
+    "relevant_primary_results": [
+      "https://www.cambridge.org/core/journals/journal-of-plasma-physics/article/current-sheet-formation-under-radiative-cooling/25F7006FAF380BAA0F24E9DE86FFA274",
+      "https://www.cambridge.org/core/journals/journal-of-plasma-physics/issue/C812BB0E1826D816AC57EED6D60CC3AA"
+    ],
+    "unrelated_result_excluded": "An erratum to a different nonlinear Hall-effect article appeared in the journal issue results; it is not a correction to this target.",
+    "qualification": "A finite set of targeted searches and absent Crossref relations is not an exhaustive proof of absence."
+  },
+  "not_performed": [
+    "No scientific-error assessment.",
+    "No author contact, external mutation, browser interaction or Git action.",
+    "No PDF, source archive, bulk data or code download.",
+    "No claim that the separately fetched arXiv source has been searched by this checker."
+  ],
+  "public_safety": {
+    "credentials_recorded": false,
+    "private_paths_recorded": false,
+    "IP_addresses_recorded": false,
+    "signed_URLs_recorded": false
+  }
+}

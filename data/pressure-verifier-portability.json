@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "Portable scalar thermodynamic verifier integration, no change to scientific logic; no full MHD simulation.",
+  "original_script_sha256": "3dfb2f25fbe3bd5fe8770896499a975cefe98152e36a78b977f2fd4d9b284968",
+  "adapted_script_path": "experiments/verify_pressure_independently.py",
+  "adapted_script_sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b",
+  "original_result_sha256": "869913295461ec8d102bc25420a2723301645cf003c5466aaa316d5789d43389",
+  "preserved_original_result_path": "data/independent-pressure-original-run.json",
+  "preserved_original_result_sha256": "869913295461ec8d102bc25420a2723301645cf003c5466aaa316d5789d43389",
+  "adapted_result_path": "results/independent-pressure.json",
+  "adapted_result_sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6",
+  "original_result_byte_exact": true,
+  "unchanged_scientific_function_AST": [
+    "jacobian",
+    "jacobian_mp",
+    "rhs",
+    "integrate",
+    "integral_mp",
+    "pressure_mp",
+    "printed_pressure_mp"
+  ],
+  "numeric_main_prefix_AST_identical": true,
+  "all_result_fields_identical_except_provenance_and_verifier_hash": true,
+  "adaptation_changes": [
+    "Use repository-relative results/ output instead of scratch output.",
+    "Replace source-PDF/TeX reads with recorded provenance hashes.",
+    "Read data/source-editions.json when available, bind metadata file hash, and require matching recorded PDF hashes.",
+    "When metadata is not yet available, label the original recorded provenance explicitly; do not claim source bytes were rehashed.",
+    "No numerical parameters, tolerances, cases, pressure formulas, solvers, controls or claim limits changed."
+  ],
+  "source_provenance_at_actual_run": {
+    "source_bytes_rehashed": false,
+    "metadata_file": "data/source-editions.json",
+    "metadata_sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331",
+    "fallback_source_records_used": 0,
+    "note": "Source hashes identify previously verified editions; this offline numerical run makes no new assertion about unavailable PDF or TeX bytes."
+  },
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.2.1",
+    "scipy": "1.17.1",
+    "mpmath": "1.3.0"
+  },
+  "actual_run": {
+    "status": "pass",
+    "direct_scalar_ODE_integrations": 318,
+    "RHS_evaluations": 80628,
+    "maximum_relative_ODE_reference_error": 9.753857047943813e-16,
+    "maximum_spatial_gradient_error": 3.355511424274482e-10,
+    "positive_outflow_states": 4096,
+    "minimum_integrated_pressure": 0.27056996418399765
+  },
+  "source_PDF_or_private_path_required": false,
+  "network_calls": 0,
+  "Git_mutations": 0,
+  "external_mutations": 0,
+  "only_scoped_canonical_files_created": [
+    "experiments/verify_pressure_independently.py",
+    "results/independent-pressure.json",
+    "data/independent-pressure-original-run.json",
+    "data/pressure-verifier-portability.json"
+  ],
+  "interpretation": "The primitive scalar EOS is integrated under prescribed positive J histories. Successful checks validate the exact EOS repair and the conditional affine/positivity implications, not coupled momentum/induction dynamics or an original numerical trajectory.",
+  "optimized_mode_rejected_before_numeric_work": true,
+  "optimized_mode_test_exit_code": 1,
+  "optimized_mode_test_preserved_result_hash": true
+}

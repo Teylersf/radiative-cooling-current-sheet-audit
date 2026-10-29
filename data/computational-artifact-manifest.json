@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "software_version": "1.0.0",
+  "author": "Taylor Kalin",
+  "scope": "Original conditional scalar checks, independent verifiers, outputs, figures and source metadata; manuscript, builder, private audit and venue records excluded.",
+  "hash_algorithm": "SHA-256",
+  "self_excluded": "data/computational-artifact-manifest.json",
+  "file_count": 35,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 112,
+      "sha256": "db75c6a3aca843a40195773251b44c9dcdafd3d9ffefb2a836a45c6fad9ff65a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 204,
+      "sha256": "87c1a3d2c69a3822512294485db0f7890dda422e866baa994297b17f56d0842d"
+    },
+    {
+      "path": "LICENSE-CODE",
+      "bytes": 1217,
+      "sha256": "a8bca0b78cb25a8281d8c7bfe2631dd5aeade39241576435b7c8181a071fd266"
+    },
+    {
+      "path": "LICENSE-MANUSCRIPT",
+      "bytes": 595,
+      "sha256": "a93855eef1012e27994f63e4b51b08311117c06588a256e4295573f76c4b27be"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3158,
+      "sha256": "acb44a2f7799a64e0ef820fc0b8acd8f634c7da7837cc39abada7cadd1630aac"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "bytes": 4140,
+      "sha256": "13276e30eed8104d584cd78ef4f2339014c9a37363f6dc5a8f79c15210e75c76"
+    },
+    {
+      "path": "SOURCE.md",
+      "bytes": 3638,
+      "sha256": "718bfed5a1cd3fb083f2ad416b269bd104ac096f38795c4f08e9342229c53a24"
+    },
+    {
+      "path": "data/asymptotics-verifier-portability.json",
+      "bytes": 3330,
+      "sha256": "27e03eb857d0e6c246f154a1ddd6f4198587d3f38c2aaa48511c68010fe11c97"
+    },
+    {
+      "path": "data/audit-findings.json",
+      "bytes": 3252,
+      "sha256": "3292706150cf803f39709e76b909851b4f099b32c09ff3b3ab179f2b124289e3"
+    },
+    {
+      "path": "data/correction-and-deposit-check.json",
+      "bytes": 5749,
+      "sha256": "8728998fe22f9066f56994ca8f13624697f9b7832e68fc19e4c7f29fba262eac"
+    },
+    {
+      "path": "data/independent-asymptotics-original-run.json",
+      "bytes": 35838,
+      "sha256": "fadbbed52575486ecc6e002574bb0c2794a53dc9d0ae6b970668ccd64f7d610c"
+    },
+    {
+      "path": "data/independent-pressure-original-run.json",
+      "bytes": 13963,
+      "sha256": "869913295461ec8d102bc25420a2723301645cf003c5466aaa316d5789d43389"
+    },
+    {
+      "path": "data/independent-steady-state-original-run.json",
+      "bytes": 12096,
+      "sha256": "718845bff2a573be8965cda56f9a6dc70ff601d14933605e0e85e5c36381b23e"
+    },
+    {
+      "path": "data/pressure-verifier-portability.json",
+      "bytes": 3461,
+      "sha256": "c7c5af9cce7473cd28c396b910e49ad4b361eb119368a2b8528fed265bd4ab2e"
+    },
+    {
+      "path": "data/root-reading-progress.json",
+      "bytes": 768,
+      "sha256": "ca6d7792b3b73e2d67bee17a7743d88d98aa3bcf44b47acfd7a55514f49a2d32"
+    },
+    {
+      "path": "data/source-editions-concordance.json",
+      "bytes": 16070,
+      "sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331"
+    },
+    {
+      "path": "data/source-editions-concordance.md",
+      "bytes": 7844,
+      "sha256": "1f138cf76577023210e41ce8817ce3951ca9bba7c0257ad0eba197be53b927a2"
+    },
+    {
+      "path": "data/source-editions.json",
+      "bytes": 16070,
+      "sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331"
+    },
+    {
+      "path": "data/steady-state-verifier-portability.json",
+      "bytes": 3985,
+      "sha256": "7f0e6596341184a89ca8ef123d359f823568ac5fdf60bf1d0cce62c2b4d20547"
+    },
+    {
+      "path": "experiments/calculate_examples.py",
+      "bytes": 9411,
+      "sha256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499"
+    },
+    {
+      "path": "experiments/verify_asymptotics_independently.py",
+      "bytes": 10113,
+      "sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971"
+    },
+    {
+      "path": "experiments/verify_pressure_independently.py",
+      "bytes": 18232,
+      "sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b"
+    },
+    {
+      "path": "experiments/verify_steady_state_independently.py",
+      "bytes": 10443,
+      "sha256": "7db46d922e8f8c83b0d68ccf7302e74e8fa29f56884b098cf75f550e59cb649a"
+    },
+    {
+      "path": "figures/cumulative-integral.png",
+      "bytes": 180347,
+      "sha256": "b00de0c22080139a44461df62a000dc8295fbbdc61220f0e33696bdbf85aca54"
+    },
+    {
+      "path": "figures/pressure-and-profile.png",
+      "bytes": 163792,
+      "sha256": "15a947085f9bbcd2968e322951b20bfce15e1f9b195a1f58e63b9305a58cb569"
+    },
+    {
+      "path": "figures/steady-branch-domain.png",
+      "bytes": 119930,
+      "sha256": "ad588f133d08f72a0a218d8df159d1b4e1b50d31ea2801f6000042f5e25c121f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 60,
+      "sha256": "792bc4b4db57384f65b153dde162e96ccaae95d4215436c9d3cb9c7e01682ab2"
+    },
+    {
+      "path": "results/cumulative-integral.csv",
+      "bytes": 55551,
+      "sha256": "6c8023bc7003c126d35c021c903101fdf94f5dab04149eed166bbda7158c0d12"
+    },
+    {
+      "path": "results/examples.json",
+      "bytes": 3775,
+      "sha256": "1a7e2b05c41456a8c22936824118d8b4a7d6e7867f332247d985072ad7cd97dd"
+    },
+    {
+      "path": "results/independent-asymptotics.json",
+      "bytes": 35838,
+      "sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a"
+    },
+    {
+      "path": "results/independent-pressure.json",
+      "bytes": 15129,
+      "sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6"
+    },
+    {
+      "path": "results/independent-steady-state.json",
+      "bytes": 12229,
+      "sha256": "2c79b896a233da796d443aa24cd4d7a0943617d30e93c226ac8d3c41d0f9aa26"
+    },
+    {
+      "path": "results/isochoric-pressure.csv",
+      "bytes": 13653,
+      "sha256": "ca2622a03a2d205c47c0118ee628e90c0d0858c275cc6d8b97765890f39ce7c4"
+    },
+    {
+      "path": "results/pressure-profile.csv",
+      "bytes": 18009,
+      "sha256": "8aa081f89651602a85e7d86a5808e1ca68dfdcbf22a665691aec96811ec74307"
+    },
+    {
+      "path": "results/steady-branch-cases.csv",
+      "bytes": 853,
+      "sha256": "02a5cafc36454f0bbca3d45fd38e0328091aeda65f71aba3d665a81759aa53f6"
+    }
+  ]
+}

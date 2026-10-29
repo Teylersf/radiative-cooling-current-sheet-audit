@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-29T21:18:13.407102+00:00",
+  "scope": "Portability and exact numerical-content verification of a bounded independent normalization and conditional steady-state calculator; no dynamical or kinetic simulation.",
+  "original_scratch_calculator": {
+    "file": "normalization_checks.py",
+    "bytes": 10589,
+    "sha256": "93c6473f56a87f2d3c4ae15e3e8badfa2069393f82db7cfb837803772df70fa0"
+  },
+  "original_scratch_run": {
+    "file": "normalization-checks.json",
+    "bytes": 12096,
+    "sha256": "718845bff2a573be8965cda56f9a6dc70ff601d14933605e0e85e5c36381b23e"
+  },
+  "preserved_original_run": {
+    "file": "data/independent-steady-state-original-run.json",
+    "bytes": 12096,
+    "sha256": "718845bff2a573be8965cda56f9a6dc70ff601d14933605e0e85e5c36381b23e"
+  },
+  "adapted_calculator": {
+    "file": "experiments/verify_steady_state_independently.py",
+    "bytes": 10443,
+    "sha256": "7db46d922e8f8c83b0d68ccf7302e74e8fa29f56884b098cf75f550e59cb649a"
+  },
+  "actual_adapted_run": {
+    "file": "results/independent-steady-state.json",
+    "bytes": 12229,
+    "sha256": "2c79b896a233da796d443aa24cd4d7a0943617d30e93c226ac8d3c41d0f9aa26"
+  },
+  "adaptations": [
+    "Resolve project root from the script parent directory.",
+    "Write the report to results/independent-steady-state.json instead of the scratch directory.",
+    "Remove scratch CSV export and its unused import.",
+    "Record the actual Python version and standard-library dependency boundary."
+  ],
+  "verification": {
+    "original_receipt_copied_byte_for_byte": true,
+    "original_receipt_producer_hash_matches_original_script": true,
+    "adapted_receipt_producer_hash_matches_executed_script": true,
+    "calculation_function_ASTs_identical": true,
+    "identical_calculation_functions": [
+      "clock_case",
+      "real_rational_power",
+      "sp_case",
+      "tilde_sign_case"
+    ],
+    "all_report_content_identical_except_script_hash_and_added_runtime": true,
+    "comparison": "Exact parsed JSON equality after excluding only script_sha256 from both reports and the newly added runtime object from the adapted report.",
+    "actual_command": "C:/Python313/python.exe experiments/verify_steady_state_independently.py",
+    "exit_code": 0,
+    "actual_runtime": {
+      "python": "3.13.7",
+      "implementation": "CPython",
+      "dependencies": "Python standard library only"
+    },
+    "source_PDF_opened_or_rehashed_at_runtime": false,
+    "network_access_required": false,
+    "external_dependencies_required": false,
+    "original_receipt_not_relabelled_as_new_run": true,
+    "original_receipt_embedded_producer_hash_not_rewritten": true
+  },
+  "controls": {
+    "general_cooling_clock_cases": 9,
+    "rational_real_branch_sign_cases": 6,
+    "steady_state_identity_parameter_cases": 24,
+    "domain_examples": 4,
+    "all_assertions_pass": true,
+    "ODE_or_PIC_runs": 0
+  },
+  "source_identity": {
+    "arxiv": "2508.13081v1",
+    "journal_DOI": "10.1017/S0022377825100949",
+    "journal_PDF_SHA256": "1e47de8f1bbdb554c26efe029b13127cdbf4464fe6599721b64129f86b22150e",
+    "identity_status": "Pinned metadata from the prior source-edition verification, not a fresh source-PDF access or hash operation."
+  },
+  "interpretive_limits": [
+    "The stationary exponent algebra is a positive control under the stated model assumptions and suppressed order-one prefactors.",
+    "Formal points outside the fitting-system, thin-sheet or small-inflow conditions are domain exclusions rather than physical predictions.",
+    "The pressure integration, figure implementation and historical plotting parameters are not certified by this calculator.",
+    "No thermal-stability spectrum or layer-length dynamics is inferred.",
+    "Optional hypothetical response sensitivities remain separate scratch work and are not included in this portable calculator or report."
+  ]
+}

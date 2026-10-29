@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "author": "Taylor Kalin",
+  "source": "Chowdhry and Loureiro, JPP91E148 and arXiv2508.13081v1",
+  "scope": "Internal mathematical comment, not a full MHD rerun or exhaustive proof that every source statement has been adjudicated.",
+  "supported_findings": [
+    {"id":"pressure-IVP","source":"2.23-2.27 and A4-A6","result":"Nonlinear pressure formula fails the stated EOS; correct solution is Bernoulli/exponential. Finite-C2 bremsstrahlung form has zero initial transformed cooling rate.","class":"exact scalar identity"},
+    {"id":"affine-closure","source":"2.25-2.31","result":"Correct scalar pressure is generally not a time-only rescaling of the initial parabola for nontrivial bremsstrahlung cooling; global affine force closure does not follow.","class":"exact conditional closure obstruction"},
+    {"id":"positive-pressure","source":"2.31 and Section3.3","result":"Common scalar positive-pressure flow preserves initial ordering. Printed outflow deceleration for 0<xi<eta,P0X>0 requires negative central total pressure.","class":"exact conditional sign and order statement"},
+    {"id":"cumulative-integral","source":"2.29,Section3.2,3.13 and AppendixB","result":"At fixed finite coefficients, finite positive eta_c, and alpha2/3 or1, Ic is positive finite; cooling/magnetic ratio tends to zero. Tail-only substitution loses leading constant.","class":"conditional endpoint limit, not finite-window rejection"},
+    {"id":"B14-coefficient","source":"B11-B14","result":"Leading inverse-square scalar force requires A^3=9eta_c/2, not9eta_c/4; generic finite thermal coefficient gives first8/9 correction, with special4/3 control separated.","class":"reduced scalar asymptotic consistency"},
+    {"id":"cooling-clock","source":"2.32-2.36","result":"Time ratio requires division by Gamma_y0; separate gamma-1 clock convention retained. Printed1-b to b-1 reversal masked by bremsstrahlung square.","class":"definition/algebra, not original-code diagnosis"},
+    {"id":"SP-domain","source":"4.7-4.16","result":"Displayed steady algebra passes; layer-fit, enhancement, thinness and sub-Alfvenic bounds require additional parameter inequalities. Existence alone does not prove stability.","class":"preserved positive algebra with domain/stability qualification"}
+  ],
+  "positive_controls": ["Final2.14 equality restored","Final3.1 flow notation repaired","Final cooling-law and Newtonian/relativistic caveats credited","b0 specifically calibrated scalar form","b1 exponential and limiting branch","No-cooling/constant-force special cases","SP balance algebra"],
+  "excluded_or_unresolved": ["Numerical bremsstrahlung coefficient without fixed temperature/composition conventions","Which unavailable program produced original curves","Actual source trajectory, collapse time or critical-R replacement","Global repaired MHD solution","Thermal stability of the variable-length branch","Chini invariant as an exhaustive nonintegrability theorem","Physical impossibility of radiative outflow contraction"],
+  "presentation_discrepancies_not_code_evidence": ["VOR flux-definition dot versus preprint cross","Pressure bracket sign2.28","Magnetic intermediate sign2.30, restored in2.31","Abstract bibliographic1962 versus2011"]
+}
