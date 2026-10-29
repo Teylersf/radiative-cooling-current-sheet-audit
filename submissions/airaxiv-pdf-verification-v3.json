@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-29T23:05:50.322166+00:00",
+  "url": "https://airaxiv.com/papers/pdf/2610.0118/?v=3",
+  "final_url": "https://airaxiv.com/papers/pdf/2610.0118/?v=3",
+  "http_status": 200,
+  "bytes": 571421,
+  "sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
+  "matches_canonical_bytes": true,
+  "authenticated": false,
+  "public_version": 3,
+  "manuscript_version": "1.1.1",
+  "observation": "Owned update1291 UI PUBLISHED,2610.0118,V3; anonymous public PDF exact."
+}

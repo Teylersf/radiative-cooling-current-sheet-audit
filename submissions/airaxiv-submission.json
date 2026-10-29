@@ -1,8 +1,8 @@
 {
-  "observed_at_utc": "2026-10-29T21:52:27.711485+00:00",
+  "observed_at_utc": "2026-10-29T23:05:50.322166+00:00",
   "state": "published",
-  "submission_id": 1282,
-  "submission_url": "https://airaxiv.com/papers/submissions/1282/",
+  "submission_id": 1291,
+  "submission_url": "https://airaxiv.com/papers/submissions/1291/",
   "public_paper_id": "2610.0118",
   "author": "Taylor Kalin",
   "author_type": "Human",
@@ -10,18 +10,74 @@
   "category": "Theoretical",
   "title": "Thermodynamic consistency and closure limits of radiatively cooled X-point collapse",
   "abstract_sha256": "55d893559fa15d6bf4a81e993ddd631c8d075c4b4fbbcfd21a4941785da6671e",
-  "manuscript_version": "1.0.0",
-  "uploaded_pdf_bytes": 535096,
-  "uploaded_pdf_sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+  "manuscript_version": "1.1.1",
+  "uploaded_pdf_bytes": 571421,
+  "uploaded_pdf_sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
   "initial_submission_created_once": true,
-  "verification": "Owned submission1282 UI PUBLISHED, public pagev1 opened; anonymous PDF bytes exact.",
+  "verification": "Single existing paper, final update1291 published asv3; complete canonical1.1.1 PDF anonymously verified.",
   "public_url": "https://airaxiv.com/papers/view/2610.0118/",
-  "public_version": 1,
+  "public_version": 3,
   "anonymous_pdf_verification": {
-    "url": "https://airaxiv.com/papers/pdf/2610.0118/?v=1",
+    "checked_at_utc": "2026-10-29T23:05:50.322166+00:00",
+    "url": "https://airaxiv.com/papers/pdf/2610.0118/?v=3",
+    "final_url": "https://airaxiv.com/papers/pdf/2610.0118/?v=3",
     "http_status": 200,
-    "bytes": 535096,
-    "sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
-    "matches_canonical_bytes": true
-  }
+    "bytes": 571421,
+    "sha256": "4ae63dec26408dea0e748c009caf58484534cc2a027c3854ee17759bda7443ff",
+    "matches_canonical_bytes": true,
+    "authenticated": false,
+    "public_version": 3,
+    "manuscript_version": "1.1.1",
+    "observation": "Owned update1291 UI PUBLISHED,2610.0118,V3; anonymous public PDF exact."
+  },
+  "initial_submission": {
+    "observed_at_utc": "2026-10-29T21:52:27.711485+00:00",
+    "state": "published",
+    "submission_id": 1282,
+    "submission_url": "https://airaxiv.com/papers/submissions/1282/",
+    "public_paper_id": "2610.0118",
+    "author": "Taylor Kalin",
+    "author_type": "Human",
+    "submission_classification": "AI-generated",
+    "category": "Theoretical",
+    "title": "Thermodynamic consistency and closure limits of radiatively cooled X-point collapse",
+    "abstract_sha256": "55d893559fa15d6bf4a81e993ddd631c8d075c4b4fbbcfd21a4941785da6671e",
+    "manuscript_version": "1.0.0",
+    "uploaded_pdf_bytes": 535096,
+    "uploaded_pdf_sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+    "initial_submission_created_once": true,
+    "verification": "Owned submission1282 UI PUBLISHED, public pagev1 opened; anonymous PDF bytes exact.",
+    "public_url": "https://airaxiv.com/papers/view/2610.0118/",
+    "public_version": 1,
+    "anonymous_pdf_verification": {
+      "url": "https://airaxiv.com/papers/pdf/2610.0118/?v=1",
+      "http_status": 200,
+      "bytes": 535096,
+      "sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+      "matches_canonical_bytes": true
+    }
+  },
+  "initial_submission_id": 1282,
+  "version_history": [
+    {
+      "version": 1,
+      "submission_id": 1282,
+      "manuscript": "1.0.0",
+      "state": "published"
+    },
+    {
+      "version": 2,
+      "submission_id": 1283,
+      "manuscript": "1.1.0",
+      "state": "published",
+      "verification": "airaxiv-pdf-verification-v2.json"
+    },
+    {
+      "version": 3,
+      "submission_id": 1291,
+      "manuscript": "1.1.1",
+      "state": "published",
+      "verification": "airaxiv-pdf-verification-v3.json"
+    }
+  ]
 }
