@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "all_checks_passed": true,
+  "version": "1.0.0",
+  "author": "Taylor Kalin",
+  "checked_at_utc": "2026-10-29T21:33:16.793500+00:00",
+  "pdf_pages": 9,
+  "pdf_bytes": 535096,
+  "pdf_sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+  "manuscript_sha256": "1f2a91be9b3139b8fcb180cfa201a5c5160bc885fbb696c43e4bdd4e63045f01",
+  "primary_reviewer_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "independent_reviewer_pages_visually_inspected": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "page_render_resolution_dpi": 120,
+  "all_final_pages_visually_passed": true,
+  "images_and_captions_kept_together": true,
+  "math_labels_1_through_12_present": true,
+  "all_three_figures_one_table_and_five_references_verified": true,
+  "final_independent_visual_and_citation_receipt": "submissions/final-pages5-8-and-citation-review.json",
+  "independent_receipt_sha256": "251d9a7ab6a7a8689477ef40e875f09dce5e52af14c3dd0764cc9a594fff0473",
+  "actual_scientific_runs": "Four programs passed from isolated36-fileGit tree archive; byte preservation proof recorded separately.",
+  "final_scope": "Conditional scalar thermodynamic and printed-model consistency comment; no fullMHD/PIC/sourcecurve reproduction.",
+  "TeX": "Tectonic success; no overfull box. One ordinary underfull paragraph warning at the frozen reduced-scalar formula, no visible defect.",
+  "template_and_footer_checks": true
+}

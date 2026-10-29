@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "software_version": "1.0.0",
+  "canonical_author": "Taylor Kalin",
+  "computational_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "git_tree": "667f0fbee9a51bd99f7bbc0dd21b1c22b19efb5a",
+  "repository": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit",
+  "immutable_source_url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/tree/8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "software_archive": {
+    "filename": "radiative-cooling-current-sheet-audit-code-v1.0.0.zip",
+    "bytes": 561065,
+    "sha256": "25a1e604ab4210f3fea86c56283d47ac0efdefd2a73cda4ceeb92c3939c812d1",
+    "md5": "3c39e9a84d9cb5ea18ddbdc445e6e8c4",
+    "format": "git archive ZIP",
+    "member_prefix": "radiative-cooling-current-sheet-audit-code-v1.0.0/",
+    "file_members": 36,
+    "git_archive_comment_matches_commit": true
+  },
+  "reproduction": {
+    "all_four_programs_passed": true,
+    "all_36_file_bytes_unchanged_after_rerun": true,
+    "final_commit_tree_identical_to_tested_tree": true,
+    "proof_sha256": "c26171ebd5ba4327e1061abc60261549f933b3fca1fa6952d5edb18676ea1ea2",
+    "environments": {
+      "producer": {
+        "python": "3.12.14",
+        "implementation": "CPython",
+        "packages": {
+          "numpy": "2.3.5",
+          "matplotlib": "3.11.2",
+          "scipy": null,
+          "mpmath": null
+        }
+      },
+      "three_verifiers": {
+        "python": "3.13.7",
+        "implementation": "CPython",
+        "packages": {
+          "numpy": "2.2.1",
+          "matplotlib": null,
+          "scipy": "1.17.1",
+          "mpmath": "1.3.0"
+        }
+      }
+    }
+  },
+  "software_DOI": {
+    "status": "published_anonymously_verified",
+    "value": "10.5281/zenodo.23780790",
+    "record_url": "https://zenodo.org/records/23780790",
+    "verification_receipt": "submissions/zenodo-code-v1.0.0.json",
+    "verification_receipt_sha256": "d5b8b6ffcbef33dca191036032cf91c481ccfdeab577cffa8cd0a1a36317b130"
+  },
+  "anonymous_public_verification": {
+    "url": "https://codeload.github.com/Teylersf/radiative-cooling-current-sheet-audit/zip/8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+    "status": 200,
+    "all_36_files_match": true,
+    "codeload_bytes": 563443,
+    "sha256": "a5bee37bca854445508434ab3d3bc3c2df3af24fd1be376f73c28320dbe51a2b"
+  },
+  "checked_at_utc": "2026-10-29T21:25:20.149114+00:00"
+}

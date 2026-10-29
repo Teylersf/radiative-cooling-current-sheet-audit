@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T21:23:28.791754+00:00",
+  "review_type": "Independent complete manuscript science review followed by read-only confirmation of requested narrow precision repairs.",
+  "author": "Taylor Kalin",
+  "manuscript": {
+    "path": "paper/manuscript.md",
+    "bytes": 22290,
+    "sha256": "dc9d3f0a3d25f8bb9bb6aebb1ec77dd3cfd74af7fff61fe558fd2c29fed59eee"
+  },
+  "computational_tree": "667f0fbee9a51bd99f7bbc0dd21b1c22b19efb5a",
+  "producer": {
+    "path": "experiments/calculate_examples.py",
+    "bytes": 9411,
+    "sha256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499",
+    "exactly_matches_frozen_tree": true,
+    "current_examples_result_pins_producer": true
+  },
+  "repairs_confirmed": {
+    "source_J_initial_normalization_explicit": true,
+    "approximate_clock_and_literal_P_over_Q_factors_distinguished": true,
+    "outflow_rate_division_survives_both_clock_conventions": true,
+    "D1_subleading_coefficient_avoids_D_notation_collision": true,
+    "SP_A_compression_distinguished_from_collapse_amplitude": true,
+    "nonnegative_pressure_count_includes_zero_control": true,
+    "gradient_error_named_absolute": true,
+    "figure3_title_necessary_checks": true,
+    "figure3_caption_does_not_claim_physical_validity_or_stability": true
+  },
+  "equations_8_to_10_verdict": {
+    "status": "pass",
+    "cumulative_integral": "Positive finite Ic is retained; the vanishing object is its endpoint tail. Assumptions include fixed finite coefficients, eta_c>0 and no earlier singularity.",
+    "force_ratio": "Tends to zero for the two stated integrable endpoint powers; the text does not exclude finite-window fits, a joint infinite-cooling limit or simultaneous eta collapse.",
+    "leading_coefficient": "The same scalar force balance requires A^3=9 eta_c/2; B14 comparison is about the displayed calculation, not an undocumented implementation.",
+    "subleading_correction": "8/9 and D1=(81/44)Hc*A^(-5/3) are qualified as local frozen-leading-equation results for Hc nonzero; the zero-thermal 4/3 control is separated.",
+    "physical_scope": "No corrected full-MHD trajectory, global existence theorem, measured physical exponent, critical cooling threshold or source figure reproduction is claimed."
+  },
+  "verification_counts_confirmed_from_recorded_outputs": {
+    "pressure_reference_cases": 80,
+    "direct_scalar_integrations": 318,
+    "ordering_groups": 20,
+    "ordered_pressures_per_group": 11,
+    "spatial_gradient_comparisons": 9,
+    "nonnegative_pressure_algebraic_outflow_states": 4096,
+    "asymptotic_cumulative_examples": 12,
+    "asymptotic_frozen_scalar_cases": 3,
+    "asymptotic_scalar_quadrature_points": 24
+  },
+  "other_scope_checks": {
+    "pressure_EOS_and_ordering_claims_conditioned_on_positive_common_history": true,
+    "thermal_stability_not_inferred_from_algebraic_steady_existence": true,
+    "earlier_UM_instability_criterion_not_automatically_transferred": true,
+    "ambiguous_brems_coefficient_not_promoted_as_verified_error": true,
+    "software_identifier_and_publication_status_outside_this_review": true
+  },
+  "numerical_runs_repeated_for_this_confirmation": false,
+  "scientific_code_manuscript_or_runtime_modified": false,
+  "external_services_accessed": false,
+  "independent_human_peer_review_claimed": false,
+  "all_checks_passed": true,
+  "actionable_scientific_repairs_remaining": []
+}

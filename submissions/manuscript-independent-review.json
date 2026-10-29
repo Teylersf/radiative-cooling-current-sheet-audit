@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T21:23:41.114470+00:00",
+  "scientific_review_status": "pass",
+  "review_kind": "Full prior manuscript/source review plus read-only confirmation of requested final draft repairs",
+  "manuscript_path": "paper/manuscript.md",
+  "manuscript_sha256": "dc9d3f0a3d25f8bb9bb6aebb1ec77dd3cfd74af7fff61fe558fd2c29fed59eee",
+  "producer_path": "experiments/calculate_examples.py",
+  "producer_sha256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499",
+  "frozen_computational_tree": "667f0fbee9a51bd99f7bbc0dd21b1c22b19efb5a",
+  "producer_matches_frozen_Git_blob": true,
+  "items_resolved": {
+    "initial_J_normalization": true,
+    "nonnegative_including_zero_control": true,
+    "distinct_expansion_D1": true,
+    "compression_A_defined": true,
+    "brems_specialization_explicit": true,
+    "font_base_12": true,
+    "ticks_11": true,
+    "all_legends_11": true,
+    "third_figure_label_necessary": true,
+    "clock_convention_clarified": true,
+    "scalar_not_full_MHD_scope": true,
+    "pending_software_citation_honest": true
+  },
+  "font_configuration": {
+    "base_points": 12,
+    "tick_points": 11,
+    "legend_points": 11,
+    "title_note": "Titles inherit the configured Matplotlib title scale; final PDF visual QA remains separate."
+  },
+  "scientific_scope": [
+    "Exact positive-branch scalar EOS repair under prescribed common positive Jacobian histories.",
+    "Generic parabolic affine nonclosure is conditional on common J and uniform initial density; special b0/b1 controls are retained.",
+    "Printed outflow-acceleration implication requires0<xi<eta,P0X>0 andtheta>=0, including one zero-pressure state.",
+    "Endpoint analysis retains fixed finite coefficients and finite positive eta_c; no universal physical endpoint is inferred.",
+    "Separate steady algebra is preserved within approximate source conventions; domain bounds do not prove stability, optical thinness, collisional validity or evolutionary accessibility.",
+    "No original numerical-trajectory reconstruction or full MHD/PIC calculation is claimed."
+  ],
+  "pending_software_citation": {
+    "pending": true,
+    "currently_disclosed_honestly": true,
+    "required_before_publication": "Replace draft archive placeholder with the independently verified issued software DOI and immutable computational pin.",
+    "software_publication_verified_by_this_review": false
+  },
+  "previous_review": "audit/independent-manuscript-review-v1.0.0-draft.md",
+  "numerical_reruns": 0,
+  "scientific_data_files_modified": false,
+  "manuscript_or_producer_modified": false,
+  "Git_mutations": 0,
+  "external_calls_or_mutations": 0,
+  "final_typeset_PDF_QA_included": false,
+  "note": "This receipt passes the scientific draft and confirms its requested edits. A later software-citation update changes the manuscript hash and needs a narrow final citation check; no new numerical run is implied."
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-29T21:30:46.032547+00:00",
+  "canonical_author": "Taylor Kalin",
+  "scope": "Only separately supplied Abstract removed and3figureURLs pinned; no scientific text changed.",
+  "canonical_sha256": "1f2a91be9b3139b8fcb180cfa201a5c5160bc885fbb696c43e4bdd4e63045f01",
+  "adapted_sha256": "ab43160c9c9be434b536271101288dac73785471c0f9c3363dbf510387c91fb0",
+  "figures": 3,
+  "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "code_doi": "10.5281/zenodo.23780790"
+}

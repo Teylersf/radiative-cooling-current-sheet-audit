@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "all_checks_passed": true,
+  "record_id": 23780790,
+  "record_status": "published",
+  "doi": "10.5281/zenodo.23780790",
+  "checked_at_utc": "2026-10-29T21:27:53.710375+00:00",
+  "record_url": "https://zenodo.org/records/23780790",
+  "title": "Computational evidence for Thermodynamic consistency and closure limits of radiatively cooled X-point collapse",
+  "version": "1.0.0",
+  "resource_type": "Software",
+  "creator": {
+    "name": "Kalin, Taylor",
+    "orcid": "0009-0003-9000-9315"
+  },
+  "snapshot_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "repository_URL": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit/tree/8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "file": {
+    "filename": "radiative-cooling-current-sheet-audit-code-v1.0.0.zip",
+    "bytes": 561065,
+    "sha256": "25a1e604ab4210f3fea86c56283d47ac0efdefd2a73cda4ceeb92c3939c812d1",
+    "md5": "3c39e9a84d9cb5ea18ddbdc445e6e8c4",
+    "format": "git archive ZIP",
+    "member_prefix": "radiative-cooling-current-sheet-audit-code-v1.0.0/",
+    "file_members": 36,
+    "git_archive_comment_matches_commit": true
+  },
+  "archive_files": 36,
+  "manifest_members_verified": 35,
+  "component_license_files_verified": true,
+  "license_scope": "Original code MIT; original text/figures CC BY4.0; explicit component terms qualify record-level rights.",
+  "DataCite": {
+    "state": "findable",
+    "registration_agency": "DataCite",
+    "title_matches": true
+  },
+  "anonymous_record_download_registry_and_resolver_checks": [
+    {
+      "requested_url": "https://zenodo.org/api/records/23780790",
+      "http_status": 200,
+      "bytes": 5601,
+      "sha256": "d4f7b1b6ade74b645988d2b7d0931717111e4f43c4da1f9183ed6ec3f7a48e9e",
+      "final_url": "https://zenodo.org/api/records/23780790",
+      "checked_at_utc": "2026-10-29T21:27:47.189176+00:00"
+    },
+    {
+      "requested_url": "https://zenodo.org/api/records/23780790/files/radiative-cooling-current-sheet-audit-code-v1.0.0.zip/content",
+      "http_status": 200,
+      "bytes": 561065,
+      "sha256": "25a1e604ab4210f3fea86c56283d47ac0efdefd2a73cda4ceeb92c3939c812d1",
+      "final_url": "https://zenodo.org/api/records/23780790/files/radiative-cooling-current-sheet-audit-code-v1.0.0.zip/content",
+      "checked_at_utc": "2026-10-29T21:27:49.553041+00:00"
+    },
+    {
+      "requested_url": "https://api.datacite.org/dois/10.5281/zenodo.23780790",
+      "http_status": 200,
+      "bytes": 8875,
+      "sha256": "f6f7fb8fc93a6ee517bcc959be20eb450a9aff47731288ba69c42ce8e010de1c",
+      "final_url": "https://api.datacite.org/dois/10.5281/zenodo.23780790",
+      "checked_at_utc": "2026-10-29T21:27:50.428737+00:00"
+    },
+    {
+      "requested_url": "https://doi.org/ra/10.5281/zenodo.23780790",
+      "http_status": 200,
+      "bytes": 70,
+      "sha256": "21e93b2d2cd906b6d88850b77b7260047a6defa0136bb211b0895f756afd6e66",
+      "final_url": "https://doi.org/ra/10.5281/zenodo.23780790",
+      "checked_at_utc": "2026-10-29T21:27:51.770924+00:00"
+    },
+    {
+      "requested_url": "https://doi.org/10.5281/zenodo.23780790",
+      "http_status": 200,
+      "bytes": 82787,
+      "sha256": "94ceafb46d9f06942e79905ab3396e2fb8d9ea0c4c3f17741811ef2cf082c44f",
+      "final_url": "https://zenodo.org/records/23780790",
+      "checked_at_utc": "2026-10-29T21:27:53.710375+00:00"
+    }
+  ],
+  "scope": "Software archive verification, not acceptance of the mathematical comment or independent physical validation."
+}

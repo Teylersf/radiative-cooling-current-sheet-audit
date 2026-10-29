@@ -1,0 +1,32 @@
+{
+  "author": "Taylor Kalin",
+  "version": "1.0.0",
+  "scientific_audit": "complete_supported_conditional_mathematical_comment",
+  "scientific_code_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+  "github": {
+    "state": "code_public_manuscript_release_prepared",
+    "url": "https://github.com/Teylersf/radiative-cooling-current-sheet-audit"
+  },
+  "zenodo": {
+    "state": "published_anonymously_verified",
+    "doi": "10.5281/zenodo.23780790",
+    "record_id": 23780790,
+    "url": "https://zenodo.org/records/23780790",
+    "scope": "Software archive, not paper acceptance"
+  },
+  "airaxiv": {
+    "state": "submission_form_prepared_not_yet_submitted"
+  },
+  "publishfun": {
+    "state": "validated_waiting_daily_allowance",
+    "paper_id": null
+  },
+  "agentpub": {
+    "state": "pending_canonical_release_and_this_study_Publishfun_final_disposition"
+  },
+  "aaes": {
+    "state": "pending_canonical_release_and_this_study_Publishfun_final_disposition"
+  },
+  "review_disclosure": "Venue AI review, public preprints, softwarepublication and independent human peerreview are separate states.",
+  "checked_at_utc": "2026-10-29T21:33:16.806520+00:00"
+}

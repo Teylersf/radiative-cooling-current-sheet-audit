@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T21:32:20.308601+00:00",
+  "status": "pass",
+  "scope": "Final9pagePDF: pages5\u20139 visually inspected; parent separately checks1\u20134. Independent anonymous software-citation verification; no numerical rerun.",
+  "PDF": {
+    "path": "paper/main.pdf",
+    "sha256": "f269d8dd6521c63bf21d7ac7152eba9ee9da888ed45dff279e1bb2084052e193",
+    "bytes": 535096,
+    "pages": 9
+  },
+  "manuscript": {
+    "path": "paper/manuscript.md",
+    "sha256": "1f2a91be9b3139b8fcb180cfa201a5c5160bc885fbb696c43e4bdd4e63045f01"
+  },
+  "reviewed_pages": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "visual_checks": {
+    "readable_original_resolution": true,
+    "formulas10_11_12_legible": true,
+    "table_headers_numeric_rows_bottom_rule_clear": true,
+    "Figure2_caption_with_image": true,
+    "Figure3_axes_legend_shading_and_scope_caption_clear": true,
+    "Figure3_caption_with_image": true,
+    "five_references_complete_and_readable": true,
+    "software_citation_H_and_disclosures_readable": true,
+    "no_clipping_overlap_or_text_overflow_observed": true,
+    "no_actionable_defects_found": true
+  },
+  "text_locators": {
+    "figure2_caption_on_page5": true,
+    "table_and_equations11_12_on_page6": true,
+    "figure3_caption_on_page7": true,
+    "software_DOI_and_disclosures_on_page8": true,
+    "all5_references_and_H_on_page9": true
+  },
+  "rendered_pages": [
+    {
+      "page": 5,
+      "raster_SHA256": "4697963c96b93170b4ed278c069f3d03245a1f3077053cade5f1c11d8fd4baf5"
+    },
+    {
+      "page": 6,
+      "raster_SHA256": "11603e3957eefdff2b611b4264c983432fd55712c43573e36337029ba2795a4e"
+    },
+    {
+      "page": 7,
+      "raster_SHA256": "008eb6679e12b3740d167ade3c13491654f33e18e67b58e547f812bd1fc20c04"
+    },
+    {
+      "page": 8,
+      "raster_SHA256": "040a6e54773999efca41ddde1db92fb3951e9fe8f7418fc116eda5f8aa4e08c9"
+    },
+    {
+      "page": 9,
+      "raster_SHA256": "57dcb92fdd45ef06ae480de0bfdc4e515b3b85d9eb20b909dc65aebaa0269902"
+    }
+  ],
+  "independent_public_citation": {
+    "doi": "10.5281/zenodo.23780790",
+    "Zenodo_API": "https://zenodo.org/api/records/23780790",
+    "DataCite_API": "https://api.datacite.org/dois/10.5281/zenodo.23780790",
+    "title": "Computational evidence for Thermodynamic consistency and closure limits of radiatively cooled X-point collapse",
+    "creator": "Kalin, Taylor",
+    "ORCID": "0009-0003-9000-9315",
+    "resource_type": "Software",
+    "version": "1.0.0",
+    "DataCite_state": "findable",
+    "metadata_matches_release_receipt": true,
+    "snapshot_commit": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+    "H_evidence": "Zenodo description, Git-archive comment and exact36file comparison with frozen local commit blobs; no assertion of a structured DataCite H identifier.",
+    "file_members": 36,
+    "manifest_entries_verified": 35,
+    "manifest_itself_is_file36": true,
+    "all36_files_exactly_match_frozen_commit": true,
+    "public_archive_bytes": 561065,
+    "public_archive_SHA256": "25a1e604ab4210f3fea86c56283d47ac0efdefd2a73cda4ceeb92c3939c812d1",
+    "public_archive_MD5": "3c39e9a84d9cb5ea18ddbdc445e6e8c4",
+    "anonymous_metadata_requests": {
+      "zenodo": {
+        "checked_at_utc": "2026-10-29T21:29:28.423060+00:00",
+        "requested_url": "https://zenodo.org/api/records/23780790",
+        "http_status": 200,
+        "final_url": "https://zenodo.org/api/records/23780790",
+        "bytes": 5601,
+        "sha256": "d4f7b1b6ade74b645988d2b7d0931717111e4f43c4da1f9183ed6ec3f7a48e9e"
+      },
+      "datacite": {
+        "checked_at_utc": "2026-10-29T21:29:28.467185+00:00",
+        "requested_url": "https://api.datacite.org/dois/10.5281/zenodo.23780790",
+        "http_status": 200,
+        "final_url": "https://api.datacite.org/dois/10.5281/zenodo.23780790",
+        "bytes": 8875,
+        "sha256": "f6f7fb8fc93a6ee517bcc959be20eb450a9aff47731288ba69c42ce8e010de1c"
+      }
+    },
+    "anonymous_archive_request_and_checks": {
+      "checked_at_utc": "2026-10-29T21:29:52.182244+00:00",
+      "requested_url": "https://zenodo.org/api/records/23780790/files/radiative-cooling-current-sheet-audit-code-v1.0.0.zip/content",
+      "http_status": 200,
+      "final_url": "https://zenodo.org/api/records/23780790/files/radiative-cooling-current-sheet-audit-code-v1.0.0.zip/content",
+      "bytes": 561065,
+      "sha256": "25a1e604ab4210f3fea86c56283d47ac0efdefd2a73cda4ceeb92c3939c812d1",
+      "md5": "3c39e9a84d9cb5ea18ddbdc445e6e8c4",
+      "file_members": 36,
+      "manifest_entries_verified": 35,
+      "archive_commit_comment": "8a4e64cc032cb0c57bb621b200903b0c0f0706c2",
+      "comment_matches_computational_H": true,
+      "all_manifest_bytes_sizes_hashes_match": true,
+      "license_files_present": {
+        "MIT": true,
+        "CC-BY-4.0": true
+      },
+      "Zenodo_description_contains_H": true
+    },
+    "original_release_receipt_SHA256": "d5b8b6ffcbef33dca191036032cf91c481ccfdeab577cffa8cd0a1a36317b130",
+    "software_citation_now_present_in_final_manuscript": true,
+    "paper_acceptance_or_publication_inferred": false
+  },
+  "normal_layout_notes": [
+    "Figure/caption minipages now keep Figure2 together onpage5 andFigure3 together onpage7.",
+    "Normal body-paragraph continuation frompage7 topage8 and whitespace around kept blocks are acceptable.",
+    "Pypdf extraction splits Funding as F unding through font positioning; the visual word is normal and the text locator normalizes that spacing."
+  ],
+  "numerical_reruns": 0,
+  "science_manuscript_PDF_figures_modified": false,
+  "Git_mutations": 0,
+  "external_mutations": 0,
+  "pending_items_in_assigned_scope": []
+}

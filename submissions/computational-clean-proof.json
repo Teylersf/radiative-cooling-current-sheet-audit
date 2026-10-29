@@ -1,0 +1,622 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-29T21:24:20.035772+00:00",
+  "frozen_git_tree": "667f0fbee9a51bd99f7bbc0dd21b1c22b19efb5a",
+  "tree_kind": "Git tree object, not a claimed commit",
+  "archive": {
+    "format": "git archive ZIP",
+    "bytes": 556831,
+    "sha256": "e4414f02abc57a8cbbaf5af037ecc7b17dbba895f709944541844d977846d7ed"
+  },
+  "scope": "Actual execution from a new safely extracted archive; original source and staging index were not modified.",
+  "checks": {
+    "archive_safe_relative_paths": true,
+    "no_links_or_encrypted_entries": true,
+    "archive_file_count": 36,
+    "archive_bytes_equal_all_frozen_tree_blobs": true,
+    "manifest_entries_verified": 35,
+    "manifest_self_excluded_explicitly": true,
+    "all_four_programs_pass": true,
+    "all_36_files_byte_identical_after_execution": true,
+    "changed_files": [],
+    "original_staging_index_entries_unchanged": true,
+    "source_tree_writes": 0,
+    "source_PDF_or_private_account_accesses": 0,
+    "network_operations": 0
+  },
+  "actual_environments": {
+    "producer": {
+      "python": "3.12.14",
+      "implementation": "CPython",
+      "packages": {
+        "numpy": "2.3.5",
+        "matplotlib": "3.11.2",
+        "scipy": null,
+        "mpmath": null
+      }
+    },
+    "three_verifiers": {
+      "python": "3.13.7",
+      "implementation": "CPython",
+      "packages": {
+        "numpy": "2.2.1",
+        "matplotlib": null,
+        "scipy": "1.17.1",
+        "mpmath": "1.3.0"
+      }
+    }
+  },
+  "program_runs": [
+    {
+      "program": "producer",
+      "script": "experiments/calculate_examples.py",
+      "runtime": "bundled plotting environment",
+      "started_at_utc": "2026-10-29T21:24:08.379739+00:00",
+      "elapsed_seconds": 2.022413,
+      "exit_code": 0,
+      "reported_status": {
+        "status": "pass",
+        "figures": 3,
+        "steady_cases": 4,
+        "correct_initial_derivative": -1,
+        "printed_initial_derivative": 0,
+        "valid_case_enhancement": 35.93041119630842
+      },
+      "stdout": {
+        "bytes": 165,
+        "sha256": "34b4fff91f3479fdf0733904c31ce7165b6efaab39db06789e65c5f2ae50c112"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "program": "pressure",
+      "script": "experiments/verify_pressure_independently.py",
+      "runtime": "CPython 3.13 environment",
+      "started_at_utc": "2026-10-29T21:24:10.409308+00:00",
+      "elapsed_seconds": 8.936595,
+      "exit_code": 0,
+      "reported_status": {
+        "status": "pass",
+        "scalar_ODE_integrations": 318,
+        "max_relative_error": 9.753857047943813e-16,
+        "max_spatial_gradient_error": 3.355511424274482e-10,
+        "positive_outflow_states": 4096,
+        "result_file": "independent-pressure.json"
+      },
+      "stdout": {
+        "bytes": 227,
+        "sha256": "063220f092a87bd413bf9644ff03112d4b29cb1d0f80a314af5c2425aca39f42"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "program": "asymptotics",
+      "script": "experiments/verify_asymptotics_independently.py",
+      "runtime": "CPython 3.13 environment",
+      "started_at_utc": "2026-10-29T21:24:19.351599+00:00",
+      "elapsed_seconds": 0.417544,
+      "exit_code": 0,
+      "reported_status": {
+        "all_checks_passed": true,
+        "cumulative_cases": 12,
+        "scalar_cases": 3,
+        "scalar_quadrature_points": 24,
+        "maximum_quadrature_difference": "7.99238071439095032525411448978065261961884322717100401360101e-75",
+        "receipt_sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a"
+      },
+      "stdout": {
+        "bytes": 292,
+        "sha256": "a7d558bf2cd5757763fb2ccdd00177b01b5617daca469e4a0448130eaefe3c00"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "program": "steady_state",
+      "script": "experiments/verify_steady_state_independently.py",
+      "runtime": "CPython 3.13 environment",
+      "started_at_utc": "2026-10-29T21:24:19.776174+00:00",
+      "elapsed_seconds": 0.120007,
+      "exit_code": 0,
+      "reported_status": {
+        "clock_controls": "pass",
+        "tilde_sign_controls": "pass",
+        "SP_scaling_controls": 24,
+        "domain_cases": 4,
+        "heavy_physics_runs": 0
+      },
+      "stdout": {
+        "bytes": 130,
+        "sha256": "c579b8e90aaf0c06fc875fc39e76c0dad09719669ec0e38a4c11ae63e0c16f88"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "file_bytes_before_and_after": [
+    {
+      "path": ".gitattributes",
+      "git_blob": "be465b97b99938d5c2511327b23f70f5636372d9",
+      "before": {
+        "bytes": 112,
+        "sha256": "db75c6a3aca843a40195773251b44c9dcdafd3d9ffefb2a836a45c6fad9ff65a"
+      },
+      "after": {
+        "bytes": 112,
+        "sha256": "db75c6a3aca843a40195773251b44c9dcdafd3d9ffefb2a836a45c6fad9ff65a"
+      },
+      "identical": true
+    },
+    {
+      "path": ".gitignore",
+      "git_blob": "f14a6bcd05a132518022cfccd52344572079a51e",
+      "before": {
+        "bytes": 204,
+        "sha256": "87c1a3d2c69a3822512294485db0f7890dda422e866baa994297b17f56d0842d"
+      },
+      "after": {
+        "bytes": 204,
+        "sha256": "87c1a3d2c69a3822512294485db0f7890dda422e866baa994297b17f56d0842d"
+      },
+      "identical": true
+    },
+    {
+      "path": "LICENSE-CODE",
+      "git_blob": "cb536e8c54638196a8fbb88cc15f8b65eba0b784",
+      "before": {
+        "bytes": 1217,
+        "sha256": "a8bca0b78cb25a8281d8c7bfe2631dd5aeade39241576435b7c8181a071fd266"
+      },
+      "after": {
+        "bytes": 1217,
+        "sha256": "a8bca0b78cb25a8281d8c7bfe2631dd5aeade39241576435b7c8181a071fd266"
+      },
+      "identical": true
+    },
+    {
+      "path": "LICENSE-MANUSCRIPT",
+      "git_blob": "279deb7766f7ec13c2c4321a70172d77e0b4b72f",
+      "before": {
+        "bytes": 595,
+        "sha256": "a93855eef1012e27994f63e4b51b08311117c06588a256e4295573f76c4b27be"
+      },
+      "after": {
+        "bytes": 595,
+        "sha256": "a93855eef1012e27994f63e4b51b08311117c06588a256e4295573f76c4b27be"
+      },
+      "identical": true
+    },
+    {
+      "path": "README.md",
+      "git_blob": "4f63d462b9b1791ed1e73531545c27f97bd03558",
+      "before": {
+        "bytes": 3158,
+        "sha256": "acb44a2f7799a64e0ef820fc0b8acd8f634c7da7837cc39abada7cadd1630aac"
+      },
+      "after": {
+        "bytes": 3158,
+        "sha256": "acb44a2f7799a64e0ef820fc0b8acd8f634c7da7837cc39abada7cadd1630aac"
+      },
+      "identical": true
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "git_blob": "6d65380043a9fdd0126419931db7df6db4d90802",
+      "before": {
+        "bytes": 4140,
+        "sha256": "13276e30eed8104d584cd78ef4f2339014c9a37363f6dc5a8f79c15210e75c76"
+      },
+      "after": {
+        "bytes": 4140,
+        "sha256": "13276e30eed8104d584cd78ef4f2339014c9a37363f6dc5a8f79c15210e75c76"
+      },
+      "identical": true
+    },
+    {
+      "path": "SOURCE.md",
+      "git_blob": "adbcdf49b918c409f05543b7e18b71abbacaa225",
+      "before": {
+        "bytes": 3638,
+        "sha256": "718bfed5a1cd3fb083f2ad416b269bd104ac096f38795c4f08e9342229c53a24"
+      },
+      "after": {
+        "bytes": 3638,
+        "sha256": "718bfed5a1cd3fb083f2ad416b269bd104ac096f38795c4f08e9342229c53a24"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/asymptotics-verifier-portability.json",
+      "git_blob": "e24d37b0a6e71ffe0e2c21cc950feb391e2261fd",
+      "before": {
+        "bytes": 3330,
+        "sha256": "27e03eb857d0e6c246f154a1ddd6f4198587d3f38c2aaa48511c68010fe11c97"
+      },
+      "after": {
+        "bytes": 3330,
+        "sha256": "27e03eb857d0e6c246f154a1ddd6f4198587d3f38c2aaa48511c68010fe11c97"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/audit-findings.json",
+      "git_blob": "fdb2576baba60fb523d2230de1cf4b80b7b1ca0e",
+      "before": {
+        "bytes": 3252,
+        "sha256": "3292706150cf803f39709e76b909851b4f099b32c09ff3b3ab179f2b124289e3"
+      },
+      "after": {
+        "bytes": 3252,
+        "sha256": "3292706150cf803f39709e76b909851b4f099b32c09ff3b3ab179f2b124289e3"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/computational-artifact-manifest.json",
+      "git_blob": "1ccf6474a6d0f7bce81e3afc318d08340a1aa5d9",
+      "before": {
+        "bytes": 6385,
+        "sha256": "e0a9df8c94bac342e46f719dab501d5b0f5196d4bf0675c2ec1eb35e5cd62610"
+      },
+      "after": {
+        "bytes": 6385,
+        "sha256": "e0a9df8c94bac342e46f719dab501d5b0f5196d4bf0675c2ec1eb35e5cd62610"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/correction-and-deposit-check.json",
+      "git_blob": "30101854b21779b72773a0b9ed0de0c8ed773d67",
+      "before": {
+        "bytes": 5749,
+        "sha256": "8728998fe22f9066f56994ca8f13624697f9b7832e68fc19e4c7f29fba262eac"
+      },
+      "after": {
+        "bytes": 5749,
+        "sha256": "8728998fe22f9066f56994ca8f13624697f9b7832e68fc19e4c7f29fba262eac"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/independent-asymptotics-original-run.json",
+      "git_blob": "e1d18403b999abe39c84949f05bfbef27ad8710b",
+      "before": {
+        "bytes": 35838,
+        "sha256": "fadbbed52575486ecc6e002574bb0c2794a53dc9d0ae6b970668ccd64f7d610c"
+      },
+      "after": {
+        "bytes": 35838,
+        "sha256": "fadbbed52575486ecc6e002574bb0c2794a53dc9d0ae6b970668ccd64f7d610c"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/independent-pressure-original-run.json",
+      "git_blob": "9ed31141df50b82245876e6ad2cdcf455458e358",
+      "before": {
+        "bytes": 13963,
+        "sha256": "869913295461ec8d102bc25420a2723301645cf003c5466aaa316d5789d43389"
+      },
+      "after": {
+        "bytes": 13963,
+        "sha256": "869913295461ec8d102bc25420a2723301645cf003c5466aaa316d5789d43389"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/independent-steady-state-original-run.json",
+      "git_blob": "9036f2f036723ec284566338ad69bd809080883c",
+      "before": {
+        "bytes": 12096,
+        "sha256": "718845bff2a573be8965cda56f9a6dc70ff601d14933605e0e85e5c36381b23e"
+      },
+      "after": {
+        "bytes": 12096,
+        "sha256": "718845bff2a573be8965cda56f9a6dc70ff601d14933605e0e85e5c36381b23e"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/pressure-verifier-portability.json",
+      "git_blob": "cbe60f6b9d4b7da93ae2e0986c9a2897bae1c372",
+      "before": {
+        "bytes": 3461,
+        "sha256": "c7c5af9cce7473cd28c396b910e49ad4b361eb119368a2b8528fed265bd4ab2e"
+      },
+      "after": {
+        "bytes": 3461,
+        "sha256": "c7c5af9cce7473cd28c396b910e49ad4b361eb119368a2b8528fed265bd4ab2e"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/root-reading-progress.json",
+      "git_blob": "f81891b4e3a9145a5d446908bc1eb6a187695924",
+      "before": {
+        "bytes": 768,
+        "sha256": "ca6d7792b3b73e2d67bee17a7743d88d98aa3bcf44b47acfd7a55514f49a2d32"
+      },
+      "after": {
+        "bytes": 768,
+        "sha256": "ca6d7792b3b73e2d67bee17a7743d88d98aa3bcf44b47acfd7a55514f49a2d32"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/source-editions-concordance.json",
+      "git_blob": "7e86ddb53a246da9c1de69b5a24e3a93208d2c8d",
+      "before": {
+        "bytes": 16070,
+        "sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331"
+      },
+      "after": {
+        "bytes": 16070,
+        "sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/source-editions-concordance.md",
+      "git_blob": "844c4ee74e083b8ba0da050c2931ea3ea63c4038",
+      "before": {
+        "bytes": 7844,
+        "sha256": "1f138cf76577023210e41ce8817ce3951ca9bba7c0257ad0eba197be53b927a2"
+      },
+      "after": {
+        "bytes": 7844,
+        "sha256": "1f138cf76577023210e41ce8817ce3951ca9bba7c0257ad0eba197be53b927a2"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/source-editions.json",
+      "git_blob": "7e86ddb53a246da9c1de69b5a24e3a93208d2c8d",
+      "before": {
+        "bytes": 16070,
+        "sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331"
+      },
+      "after": {
+        "bytes": 16070,
+        "sha256": "04006adf981b23014bc10ad7ce206042ce5c355b4359835778a0a07cbe2f8331"
+      },
+      "identical": true
+    },
+    {
+      "path": "data/steady-state-verifier-portability.json",
+      "git_blob": "bc7ade33989ca1dc92046547a7e98927964730a8",
+      "before": {
+        "bytes": 3985,
+        "sha256": "7f0e6596341184a89ca8ef123d359f823568ac5fdf60bf1d0cce62c2b4d20547"
+      },
+      "after": {
+        "bytes": 3985,
+        "sha256": "7f0e6596341184a89ca8ef123d359f823568ac5fdf60bf1d0cce62c2b4d20547"
+      },
+      "identical": true
+    },
+    {
+      "path": "experiments/calculate_examples.py",
+      "git_blob": "9db56cc1758cf98d2a314ff6988459770490b862",
+      "before": {
+        "bytes": 9411,
+        "sha256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499"
+      },
+      "after": {
+        "bytes": 9411,
+        "sha256": "a0a6e55916f979a455b25169058b119f52cee6ee0cc23ee4eb96496cc175c499"
+      },
+      "identical": true
+    },
+    {
+      "path": "experiments/verify_asymptotics_independently.py",
+      "git_blob": "a4afc377e00ab0b63ac43427ce998f04572f59fb",
+      "before": {
+        "bytes": 10113,
+        "sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971"
+      },
+      "after": {
+        "bytes": 10113,
+        "sha256": "36330a534f6edcc00566e4cd9a4b6bffc1b0527217bc1d6e30906e6c7172d971"
+      },
+      "identical": true
+    },
+    {
+      "path": "experiments/verify_pressure_independently.py",
+      "git_blob": "3fcf0356e11c0787ef32038fc18307b61d3519e9",
+      "before": {
+        "bytes": 18232,
+        "sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b"
+      },
+      "after": {
+        "bytes": 18232,
+        "sha256": "8ef4b579041e4f3bb0e63ce100f846e8d491258bc9b09d343d9450133a644a3b"
+      },
+      "identical": true
+    },
+    {
+      "path": "experiments/verify_steady_state_independently.py",
+      "git_blob": "6e76e3adeba27123fd39ba56eb9e415d956031ae",
+      "before": {
+        "bytes": 10443,
+        "sha256": "7db46d922e8f8c83b0d68ccf7302e74e8fa29f56884b098cf75f550e59cb649a"
+      },
+      "after": {
+        "bytes": 10443,
+        "sha256": "7db46d922e8f8c83b0d68ccf7302e74e8fa29f56884b098cf75f550e59cb649a"
+      },
+      "identical": true
+    },
+    {
+      "path": "figures/cumulative-integral.png",
+      "git_blob": "1ccd393a611d948ea35d99b609c2d92134e1c928",
+      "before": {
+        "bytes": 180347,
+        "sha256": "b00de0c22080139a44461df62a000dc8295fbbdc61220f0e33696bdbf85aca54"
+      },
+      "after": {
+        "bytes": 180347,
+        "sha256": "b00de0c22080139a44461df62a000dc8295fbbdc61220f0e33696bdbf85aca54"
+      },
+      "identical": true
+    },
+    {
+      "path": "figures/pressure-and-profile.png",
+      "git_blob": "532df05023952f2d559f0dd2b4a19251ec78d43d",
+      "before": {
+        "bytes": 163792,
+        "sha256": "15a947085f9bbcd2968e322951b20bfce15e1f9b195a1f58e63b9305a58cb569"
+      },
+      "after": {
+        "bytes": 163792,
+        "sha256": "15a947085f9bbcd2968e322951b20bfce15e1f9b195a1f58e63b9305a58cb569"
+      },
+      "identical": true
+    },
+    {
+      "path": "figures/steady-branch-domain.png",
+      "git_blob": "8e4ef866c1ba274901e31480b0108258ccaa8559",
+      "before": {
+        "bytes": 119930,
+        "sha256": "ad588f133d08f72a0a218d8df159d1b4e1b50d31ea2801f6000042f5e25c121f"
+      },
+      "after": {
+        "bytes": 119930,
+        "sha256": "ad588f133d08f72a0a218d8df159d1b4e1b50d31ea2801f6000042f5e25c121f"
+      },
+      "identical": true
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob": "cc00874bae0308a1b65b5caeb002ffee87c541dc",
+      "before": {
+        "bytes": 60,
+        "sha256": "792bc4b4db57384f65b153dde162e96ccaae95d4215436c9d3cb9c7e01682ab2"
+      },
+      "after": {
+        "bytes": 60,
+        "sha256": "792bc4b4db57384f65b153dde162e96ccaae95d4215436c9d3cb9c7e01682ab2"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/cumulative-integral.csv",
+      "git_blob": "576abb1db08af60b44869b3e5c6b611c381d0d40",
+      "before": {
+        "bytes": 55551,
+        "sha256": "6c8023bc7003c126d35c021c903101fdf94f5dab04149eed166bbda7158c0d12"
+      },
+      "after": {
+        "bytes": 55551,
+        "sha256": "6c8023bc7003c126d35c021c903101fdf94f5dab04149eed166bbda7158c0d12"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/examples.json",
+      "git_blob": "e1c2e9ae445cf871b1e062960214a7deb9ee13de",
+      "before": {
+        "bytes": 3775,
+        "sha256": "1a7e2b05c41456a8c22936824118d8b4a7d6e7867f332247d985072ad7cd97dd"
+      },
+      "after": {
+        "bytes": 3775,
+        "sha256": "1a7e2b05c41456a8c22936824118d8b4a7d6e7867f332247d985072ad7cd97dd"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/independent-asymptotics.json",
+      "git_blob": "8e187c039db7d70250e834c55ece0e6826e4eb5b",
+      "before": {
+        "bytes": 35838,
+        "sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a"
+      },
+      "after": {
+        "bytes": 35838,
+        "sha256": "c7994826cc63d8fefa42de96f5fbd4591b05b9a04d5514e6ace00e7d174d2f0a"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/independent-pressure.json",
+      "git_blob": "031d6d12b94693b73985075a5a9d95babbaed5c9",
+      "before": {
+        "bytes": 15129,
+        "sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6"
+      },
+      "after": {
+        "bytes": 15129,
+        "sha256": "c145f3a854e4eb304bf57e01f8569dbc4c43e74fc316a57f52563b6412869bc6"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/independent-steady-state.json",
+      "git_blob": "191669467f20d9f7799b4f6269d48cbbf172744b",
+      "before": {
+        "bytes": 12229,
+        "sha256": "2c79b896a233da796d443aa24cd4d7a0943617d30e93c226ac8d3c41d0f9aa26"
+      },
+      "after": {
+        "bytes": 12229,
+        "sha256": "2c79b896a233da796d443aa24cd4d7a0943617d30e93c226ac8d3c41d0f9aa26"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/isochoric-pressure.csv",
+      "git_blob": "9077d2e87a35c47ae1b9d637a31f1a81d9ec0da2",
+      "before": {
+        "bytes": 13653,
+        "sha256": "ca2622a03a2d205c47c0118ee628e90c0d0858c275cc6d8b97765890f39ce7c4"
+      },
+      "after": {
+        "bytes": 13653,
+        "sha256": "ca2622a03a2d205c47c0118ee628e90c0d0858c275cc6d8b97765890f39ce7c4"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/pressure-profile.csv",
+      "git_blob": "63b4ea57f5c30ad91876896517b85cdd1f3765bf",
+      "before": {
+        "bytes": 18009,
+        "sha256": "8aa081f89651602a85e7d86a5808e1ca68dfdcbf22a665691aec96811ec74307"
+      },
+      "after": {
+        "bytes": 18009,
+        "sha256": "8aa081f89651602a85e7d86a5808e1ca68dfdcbf22a665691aec96811ec74307"
+      },
+      "identical": true
+    },
+    {
+      "path": "results/steady-branch-cases.csv",
+      "git_blob": "a0a1c4616dc4be1af066c25986e66fdd224848a8",
+      "before": {
+        "bytes": 853,
+        "sha256": "02a5cafc36454f0bbca3d45fd38e0328091aeda65f71aba3d665a81759aa53f6"
+      },
+      "after": {
+        "bytes": 853,
+        "sha256": "02a5cafc36454f0bbca3d45fd38e0328091aeda65f71aba3d665a81759aa53f6"
+      },
+      "identical": true
+    }
+  ],
+  "limits": [
+    "Exact bytes are established only for this recorded pair of installed environments.",
+    "No fluid, PIC or original-author trajectory simulation was performed.",
+    "The 35 manifest entries plus the manifest itself give 36 frozen-tree files.",
+    "Source PDF identity is pinned metadata; absent PDFs were not rehashed or opened."
+  ]
+}

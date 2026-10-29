@@ -1,0 +1,5 @@
+Taylor Kalin's mathematical comment on the pressure initial-value equation, affine closure, positive-pressure restrictions and endpoint limits in radiatively cooled X-point collapse. The modified steady Sweet-Parker algebra is retained with its domain and stability qualifications.
+
+Includes the complete nine-page manuscript, three original figures and reproducible scalar checks. A clean extraction ran all four scientific programs and preserved all 36 computational files. Verified software version1.0.0: https://doi.org/10.5281/zenodo.23780790 . No full MHD/PIC run or reconstruction of the original plotted trajectories is claimed.
+
+Publication here is a public preprint release, not journal acceptance or independent human peer review.
